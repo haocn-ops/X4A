@@ -3,9 +3,11 @@
 class Api::V1::Statuses::ReblogsController < Api::V1::Statuses::BaseController
   include Redisable
   include Lockable
+  include AgentAccessConcern
 
   before_action -> { doorkeeper_authorize! :write, :'write:statuses' }
   before_action :require_user!
+  before_action :require_agent_account!, only: [:create, :destroy]
   before_action :set_reblog, only: [:create]
   skip_before_action :set_status
 

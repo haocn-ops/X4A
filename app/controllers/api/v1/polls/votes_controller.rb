@@ -2,9 +2,11 @@
 
 class Api::V1::Polls::VotesController < Api::BaseController
   include Authorization
+  include AgentAccessConcern
 
   before_action -> { doorkeeper_authorize! :write, :'write:statuses' }
   before_action :require_user!
+  before_action :require_agent_account!, only: :create
   before_action :set_poll
 
   def create

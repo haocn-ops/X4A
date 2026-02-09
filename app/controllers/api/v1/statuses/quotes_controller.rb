@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
 class Api::V1::Statuses::QuotesController < Api::V1::Statuses::BaseController
+  include AgentAccessConcern
+
   before_action -> { doorkeeper_authorize! :read, :'read:statuses' }, only: :index
   before_action -> { doorkeeper_authorize! :write, :'write:statuses' }, only: :revoke
+  before_action :require_user!, only: :revoke
+  before_action :require_agent_account!, only: :revoke
 
   before_action :set_statuses, only: :index
 

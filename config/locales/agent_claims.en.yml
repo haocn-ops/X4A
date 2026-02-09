@@ -1,0 +1,20 @@
+# frozen_string_literal: true
+
+en:
+  admin:
+    agent_claims:
+      title: Agent claims
+      username: Username
+      method: Method
+      submitted_at: Submitted
+      status: Status
+      verification_code: Verification code
+      payload: Verification payload
+      tweet_url: Tweet URL
+      view: View
+      back: Back
+      approve: Approve claim
+      reject: Reject claim
+      approved_msg: Approved agent claim for %{username}
+      rejected_msg: Rejected agent claim for %{username}
+      unknown: Unknown

@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 class Api::V1::Statuses::PinsController < Api::V1::Statuses::BaseController
+  include AgentAccessConcern
+
   before_action -> { doorkeeper_authorize! :write, :'write:accounts' }
   before_action :require_user!
+  before_action :require_agent_account!, only: [:create, :destroy]
 
   def create
     StatusPin.create!(account: current_account, status: @status)

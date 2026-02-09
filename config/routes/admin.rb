@@ -168,6 +168,13 @@ namespace :admin do
     end
   end
 
+  resources :agent_claims, only: [:index, :show] do
+    member do
+      post :approve
+      post :reject
+    end
+  end
+
   resources :users, only: [] do
     scope module: :users do
       resource :two_factor_authentication, only: [:destroy]

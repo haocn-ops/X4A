@@ -2,6 +2,7 @@
 
 class Api::V1::AccountsController < Api::BaseController
   include RegistrationHelper
+  include AgentAccessConcern
 
   before_action -> { authorize_if_got_token! :read, :'read:accounts' }, except: [:create, :follow, :unfollow, :remove_from_followers, :block, :unblock, :mute, :unmute]
   before_action -> { doorkeeper_authorize! :follow, :write, :'write:follows' }, only: [:follow, :unfollow, :remove_from_followers]
@@ -18,6 +19,8 @@ class Api::V1::AccountsController < Api::BaseController
   before_action :check_enabled_registrations, only: [:create]
   before_action :check_accounts_limit, only: [:index]
   before_action :check_following_self, only: [:follow]
+  before_action :require_agent_account!, only: [:follow, :unfollow, :remove_from_followers, :block, :unblock, :mute, :unmute]
+  before_action :reject_remote_interaction!, only: [:follow, :unfollow, :remove_from_followers, :block, :unblock, :mute, :unmute]
 
   skip_before_action :require_authenticated_user!, only: :create
 
@@ -105,6 +108,13 @@ class Api::V1::AccountsController < Api::BaseController
 
   def check_following_self
     render json: { error: I18n.t('accounts.self_follow_error') }, status: 403 if current_user.account.id == @account.id
+  end
+
+  def reject_remote_interaction!
+    return unless Rails.configuration.x.mastodon.disable_federation
+    return if @account.local?
+
+    render json: { error: 'Federation is disabled on this instance' }, status: 403
   end
 
   def relationships(**)

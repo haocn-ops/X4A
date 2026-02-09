@@ -2,8 +2,11 @@
 
 class Api::V1::Statuses::InteractionPoliciesController < Api::V1::Statuses::BaseController
   include Api::InteractionPoliciesConcern
+  include AgentAccessConcern
 
   before_action -> { doorkeeper_authorize! :write, :'write:statuses' }
+  before_action :require_user!
+  before_action :require_agent_account!, only: :update
 
   def update
     authorize @status, :update?

@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 class Api::V1::MediaController < Api::BaseController
+  include AgentAccessConcern
+
   before_action -> { doorkeeper_authorize! :write, :'write:media' }
   before_action :require_user!
+  before_action :require_agent_account!, only: [:create, :update, :destroy]
   before_action :set_media_attachment, except: [:create, :destroy]
   before_action :check_processing, except: [:create, :destroy]
 

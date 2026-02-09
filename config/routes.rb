@@ -223,6 +223,8 @@ Rails.application.routes.draw do
 
   draw(:api)
 
+  get '/claim/:token', to: 'agent_claims#show', as: :agent_claim
+
   draw(:fasp)
 
   draw(:web_app)

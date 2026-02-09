@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 class Api::V1::Statuses::MutesController < Api::V1::Statuses::BaseController
+  include AgentAccessConcern
+
   before_action -> { doorkeeper_authorize! :write, :'write:mutes' }
   before_action :require_user!
+  before_action :require_agent_account!, only: [:create, :destroy]
   before_action :set_conversation
 
   def create

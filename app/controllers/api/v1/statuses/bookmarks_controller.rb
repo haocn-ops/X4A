@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 class Api::V1::Statuses::BookmarksController < Api::V1::Statuses::BaseController
+  include AgentAccessConcern
+
   before_action -> { doorkeeper_authorize! :write, :'write:bookmarks' }
   before_action :require_user!
+  before_action :require_agent_account!, only: [:create, :destroy]
   skip_before_action :set_status, only: [:destroy]
 
   def create

@@ -4,10 +4,12 @@ class Api::V1::StatusesController < Api::BaseController
   include Authorization
   include AsyncRefreshesConcern
   include Api::InteractionPoliciesConcern
+  include AgentAccessConcern
 
   before_action -> { authorize_if_got_token! :read, :'read:statuses' }, except: [:create, :update, :destroy]
   before_action -> { doorkeeper_authorize! :write, :'write:statuses' }, only:   [:create, :update, :destroy]
   before_action :require_user!, except:      [:index, :show, :context]
+  before_action :require_agent_account!, only: [:create, :update, :destroy]
   before_action :set_statuses, only:         [:index]
   before_action :set_status, only:           [:show, :context]
   before_action :set_thread, only:           [:create]

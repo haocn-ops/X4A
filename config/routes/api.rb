@@ -19,6 +19,10 @@ namespace :api, format: false do
 
   # JSON / REST API
   namespace :v1 do
+    post 'agents/register', to: 'agents#register'
+    post 'agents/claim', to: 'agents#claim'
+    get 'agents/status', to: 'agents#status'
+
     resources :statuses, only: [:index, :create, :show, :update, :destroy] do
       scope module: :statuses do
         resources :reblogged_by, controller: :reblogged_by_accounts, only: :index

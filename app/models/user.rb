@@ -217,6 +217,25 @@ class User < ApplicationRecord
     !approved?
   end
 
+  def agent_account?
+    account&.bot?
+  end
+
+  def agent_claimed?
+    agent_claimed_at.present?
+  end
+
+  def agent_claim_pending?
+    agent_claim_submitted_at.present? && agent_claimed_at.blank?
+  end
+
+  def agent_claim_status
+    return 'unclaimed' if agent_claim_submitted_at.nil?
+    return 'claimed' if agent_claimed_at.present?
+
+    'pending'
+  end
+
   def active_for_authentication?
     !account.memorial?
   end

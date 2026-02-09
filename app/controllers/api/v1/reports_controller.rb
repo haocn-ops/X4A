@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 class Api::V1::ReportsController < Api::BaseController
+  include AgentAccessConcern
+
   before_action -> { doorkeeper_authorize! :write, :'write:reports' }, only: [:create]
   before_action :require_user!
+  before_action :require_agent_account!, only: :create
 
   override_rate_limit_headers :create, family: :reports
 

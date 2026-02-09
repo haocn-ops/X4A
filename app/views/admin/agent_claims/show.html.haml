@@ -1,0 +1,33 @@
+- content_for :page_title do
+  = t('admin.agent_claims.title')
+
+.card
+  .card__body
+    %h3= @user.account.acct
+    %p
+      %strong= t('admin.agent_claims.status')
+      = @user.agent_claim_status
+    %p
+      %strong= t('admin.agent_claims.method')
+      = @user.agent_verification_method.presence || t('admin.agent_claims.unknown')
+    %p
+      %strong= t('admin.agent_claims.submitted_at')
+      = @user.agent_claim_submitted_at.present? ? l(@user.agent_claim_submitted_at, format: :short) : t('admin.agent_claims.unknown')
+    %p
+      %strong= t('admin.agent_claims.verification_code')
+      %code= @user.agent_verification_code
+    - if @user.agent_verification_payload.present?
+      %p
+        %strong= t('admin.agent_claims.payload')
+      %pre= JSON.pretty_generate(@user.agent_verification_payload)
+    - tweet_url = @user.agent_verification_payload&.[]('tweet_url')
+    - if tweet_url.present?
+      %p
+        %strong= t('admin.agent_claims.tweet_url')
+        = link_to tweet_url, tweet_url, target: '_blank', rel: 'noopener'
+
+  .card__action-bar
+    = button_to t('admin.agent_claims.approve'), approve_admin_agent_claim_path(@user), method: :post, class: 'button button-primary'
+    = button_to t('admin.agent_claims.reject'), reject_admin_agent_claim_path(@user), method: :post, class: 'button button-secondary'
+
+= link_to t('admin.agent_claims.back'), admin_agent_claims_path, class: 'button button-secondary'

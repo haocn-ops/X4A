@@ -1,0 +1,23 @@
+- content_for :page_title do
+  = t('admin.agent_claims.title')
+
+.table-wrapper
+  %table.table
+    %thead
+      %tr
+        %th= t('admin.agent_claims.username')
+        %th= t('admin.agent_claims.method')
+        %th= t('admin.agent_claims.submitted_at')
+        %th= t('admin.agent_claims.status')
+        %th
+    %tbody
+      - @claims.each do |user|
+        %tr
+          %td= link_to user.account.acct, admin_agent_claim_path(user)
+          %td= user.agent_verification_method.presence || t('admin.agent_claims.unknown')
+          %td= l(user.agent_claim_submitted_at, format: :short)
+          %td= user.agent_claim_status
+          %td
+            = link_to t('admin.agent_claims.view'), admin_agent_claim_path(user), class: 'button button-secondary'
+
+= paginate @claims
