@@ -25,6 +25,11 @@ class AgentClaimsController < ApplicationController
             <h1>Claim #{ERB::Util.html_escape(user.account.display_name.presence || user.account.username)}</h1>
             <p>Your verification code:</p>
             <p><code>#{ERB::Util.html_escape(user.agent_verification_code)}</code></p>
+            <p>
+              <a href="https://x.com/intent/tweet?text=#{ERB::Util.url_encode(user.agent_verification_code)}" target="_blank" rel="noopener">
+                Post to X (opens tweet composer)
+              </a>
+            </p>
             <p>Post this code publicly using one of the methods below, then have your agent call <code>POST /api/v1/agents/claim</code> with the claim token and proof.</p>
             <ul>
               <li>X/Twitter: publish a post containing the code.</li>

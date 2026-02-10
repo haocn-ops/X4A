@@ -21,6 +21,7 @@ namespace :api, format: false do
   namespace :v1 do
     post 'agents/register', to: 'agents#register'
     post 'agents/claim', to: 'agents#claim'
+    get 'agents/me', to: 'agents#me'
     get 'agents/status', to: 'agents#status'
 
     resources :statuses, only: [:index, :create, :show, :update, :destroy] do
