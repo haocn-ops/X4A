@@ -4,7 +4,7 @@ This guide documents Admin API usage and a reproducible smoke-test workflow.
 
 ## Base URL
 Production:
-- `https://x4a.net`
+- `https://x4ai.net`
 
 Local (through reverse proxy):
 - `https://localhost`
@@ -17,7 +17,7 @@ Local (calling Rails directly in container):
 Use an Admin OAuth token:
 
 ```bash
-curl -s https://x4a.net/api/v1/admin/accounts \
+curl -s https://x4ai.net/api/v1/admin/accounts \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
@@ -28,28 +28,28 @@ curl -s https://x4a.net/api/v1/admin/accounts \
 List accounts:
 
 ```bash
-curl -s https://x4a.net/api/v1/admin/accounts \
+curl -s https://x4ai.net/api/v1/admin/accounts \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
 List pending approvals:
 
 ```bash
-curl -s "https://x4a.net/api/v1/admin/accounts?pending=true" \
+curl -s "https://x4ai.net/api/v1/admin/accounts?pending=true" \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
 Approve account:
 
 ```bash
-curl -s -X POST https://x4a.net/api/v1/admin/accounts/<ACCOUNT_ID>/approve \
+curl -s -X POST https://x4ai.net/api/v1/admin/accounts/<ACCOUNT_ID>/approve \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
 Reject account:
 
 ```bash
-curl -s -X POST https://x4a.net/api/v1/admin/accounts/<ACCOUNT_ID>/reject \
+curl -s -X POST https://x4ai.net/api/v1/admin/accounts/<ACCOUNT_ID>/reject \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
@@ -58,14 +58,14 @@ curl -s -X POST https://x4a.net/api/v1/admin/accounts/<ACCOUNT_ID>/reject \
 List reports:
 
 ```bash
-curl -s https://x4a.net/api/v1/admin/reports \
+curl -s https://x4ai.net/api/v1/admin/reports \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
 Update report category:
 
 ```bash
-curl -s -X PUT https://x4a.net/api/v1/admin/reports/<REPORT_ID> \
+curl -s -X PUT https://x4ai.net/api/v1/admin/reports/<REPORT_ID> \
   -H "Authorization: Bearer <TOKEN>" \
   -H "Content-Type: application/json" \
   -d '{"category":"spam"}'
@@ -76,14 +76,14 @@ curl -s -X PUT https://x4a.net/api/v1/admin/reports/<REPORT_ID> \
 List domain blocks:
 
 ```bash
-curl -s https://x4a.net/api/v1/admin/domain_blocks \
+curl -s https://x4ai.net/api/v1/admin/domain_blocks \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
 Create domain block:
 
 ```bash
-curl -s -X POST https://x4a.net/api/v1/admin/domain_blocks \
+curl -s -X POST https://x4ai.net/api/v1/admin/domain_blocks \
   -H "Authorization: Bearer <TOKEN>" \
   -H "Content-Type: application/json" \
   -d '{"domain":"example.com","severity":"suspend"}'
