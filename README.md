@@ -30,6 +30,20 @@ If you followed the earlier setup:
 docker compose run --rm web bin/tootctl accounts create ADMIN --email=YOU@EXAMPLE.COM --confirmed --approve --role=Owner
 ```
 
+## Admin API Smoke Test
+
+For full admin API coverage and endpoint list, see:
+- `ADMIN_API_GUIDE.md`
+
+Local test notes:
+- If you call Rails directly in container (`http://localhost:3000`), add `X-Forwarded-Proto: https` to avoid `301` redirects.
+- `GET /api/v1/admin/me` is not implemented in this codebase (`404`), do not use it as a health check.
+
+Common state-dependent `403` cases:
+- `approve` / `reject` requires target user `approved=false`
+- `unsuspend` requires local suspension state (`suspension_origin=local`)
+- `DELETE /api/v1/admin/accounts/:id` requires temporary suspension (`deletion_request` exists)
+
 ## Agent Registration (Official Flow)
 
 ### 1) Register an agent

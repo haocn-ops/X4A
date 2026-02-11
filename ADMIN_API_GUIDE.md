@@ -1,68 +1,87 @@
 # X4AI Admin API Guide
 
-This guide documents common Admin API calls for automation using an Admin token.
+This guide documents Admin API usage and a reproducible smoke-test workflow.
 
-> Base URL: `https://x4a.net`
+## Base URL
+Production:
+- `https://x4a.net`
+
+Local (through reverse proxy):
+- `https://localhost`
+
+Local (calling Rails directly in container):
+- `http://localhost:3000`
+- Add header `X-Forwarded-Proto: https` to avoid HTTPS redirect (`301`).
 
 ## Auth
-Use your Admin API token in the `Authorization` header:
+Use an Admin OAuth token:
 
 ```bash
 curl -s https://x4a.net/api/v1/admin/accounts \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-## 1) Accounts
+## Quick Endpoint Reference
 
-**List all accounts**
+### Accounts
+
+List accounts:
+
 ```bash
 curl -s https://x4a.net/api/v1/admin/accounts \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-**List pending approvals**
+List pending approvals:
+
 ```bash
 curl -s "https://x4a.net/api/v1/admin/accounts?pending=true" \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-**Approve an account**
+Approve account:
+
 ```bash
 curl -s -X POST https://x4a.net/api/v1/admin/accounts/<ACCOUNT_ID>/approve \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-**Reject an account**
+Reject account:
+
 ```bash
 curl -s -X POST https://x4a.net/api/v1/admin/accounts/<ACCOUNT_ID>/reject \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-## 2) Reports
+### Reports
 
-**List reports**
+List reports:
+
 ```bash
 curl -s https://x4a.net/api/v1/admin/reports \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-**Mark report as action taken**
+Update report category:
+
 ```bash
-curl -s -X PATCH https://x4a.net/api/v1/admin/reports/<REPORT_ID> \
+curl -s -X PUT https://x4a.net/api/v1/admin/reports/<REPORT_ID> \
   -H "Authorization: Bearer <TOKEN>" \
   -H "Content-Type: application/json" \
-  -d '{"action_taken":true}'
+  -d '{"category":"spam"}'
 ```
 
-## 3) Domain blocks
+### Domain blocks
 
-**List domain blocks**
+List domain blocks:
+
 ```bash
 curl -s https://x4a.net/api/v1/admin/domain_blocks \
   -H "Authorization: Bearer <TOKEN>"
 ```
 
-**Create a domain block**
+Create domain block:
+
 ```bash
 curl -s -X POST https://x4a.net/api/v1/admin/domain_blocks \
   -H "Authorization: Bearer <TOKEN>" \
@@ -70,9 +89,77 @@ curl -s -X POST https://x4a.net/api/v1/admin/domain_blocks \
   -d '{"domain":"example.com","severity":"suspend"}'
 ```
 
-## 4) Admin profile
+## Full Smoke Test Scope (validated on February 11, 2026)
 
-```bash
-curl -s https://x4a.net/api/v1/admin/me \
-  -H "Authorization: Bearer <TOKEN>"
+The following endpoints were tested against this repo and returned success (`200`) with proper fixture state:
+
+- `GET /api/v1/admin/accounts`
+- `GET /api/v1/admin/accounts/:id`
+- `POST /api/v1/admin/accounts/:id/approve`
+- `POST /api/v1/admin/accounts/:id/reject`
+- `POST /api/v1/admin/accounts/:id/enable`
+- `POST /api/v1/admin/accounts/:id/unsuspend`
+- `POST /api/v1/admin/accounts/:id/unsensitive`
+- `POST /api/v1/admin/accounts/:id/unsilence`
+- `POST /api/v1/admin/accounts/:id/action`
+- `DELETE /api/v1/admin/accounts/:id`
+- `GET /api/v1/admin/reports`
+- `GET /api/v1/admin/reports/:id`
+- `PUT /api/v1/admin/reports/:id`
+- `POST /api/v1/admin/reports/:id/assign_to_self`
+- `POST /api/v1/admin/reports/:id/unassign`
+- `POST /api/v1/admin/reports/:id/resolve`
+- `POST /api/v1/admin/reports/:id/reopen`
+- `GET/POST/DELETE /api/v1/admin/domain_allows`
+- `GET/POST/PUT/DELETE /api/v1/admin/domain_blocks`
+- `GET/POST/DELETE /api/v1/admin/email_domain_blocks`
+- `GET/POST/PUT/DELETE /api/v1/admin/ip_blocks`
+- `GET/POST/DELETE /api/v1/admin/canonical_email_blocks`
+- `POST /api/v1/admin/canonical_email_blocks/test`
+- `POST /api/v1/admin/dimensions`
+- `POST /api/v1/admin/retention`
+- `POST /api/v1/admin/measures`
+- `GET /api/v1/admin/tags`
+- `GET /api/v1/admin/tags/:id`
+- `POST /api/v1/admin/trends/tags/:id/approve`
+- `POST /api/v1/admin/trends/tags/:id/reject`
+- `POST /api/v1/admin/trends/statuses/:id/approve`
+- `POST /api/v1/admin/trends/statuses/:id/reject`
+- `POST /api/v1/admin/trends/links/:id/approve`
+- `POST /api/v1/admin/trends/links/:id/reject`
+- `POST /api/v1/admin/trends/links/publishers/:id/approve`
+- `POST /api/v1/admin/trends/links/publishers/:id/reject`
+- `GET /api/v2/admin/accounts`
+
+Expected auth guard behavior:
+
+- no token -> `403` (`This action is not allowed`)
+
+## Important State Requirements (to avoid false `403`)
+
+Some admin actions are state-dependent by policy, not just token scope:
+
+- `approve` and `reject`: target user must be pending (`approved=false`).
+- `unsuspend`: target account must be locally suspended (`suspension_origin=local`).
+- `DELETE /admin/accounts/:id`: target must be temporarily suspended (has `deletion_request`).
+
+### Common fixture pitfall
+
+`User` has `before_create :set_approved`, so creating user with `approved: false` may be overwritten.
+
+Use this pattern for pending users:
+
+```ruby
+user = User.create!(...)
+user.update!(approved: false)
 ```
+
+Use this pattern for suspend/delete policy-compatible state:
+
+```ruby
+account.suspend!(origin: :local, block_email: false)
+```
+
+## Endpoint Note
+
+`GET /api/v1/admin/me` is not available in this codebase (returns `404`). Do not rely on it for health checks.
