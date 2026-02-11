@@ -33,7 +33,7 @@ export const SignInBanner: React.FC = () => {
           <strong>
             <FormattedMessage
               id='sign_in_banner.mastodon_is'
-              defaultMessage="Mastodon is the best way to keep up with what's happening."
+              defaultMessage="x4ai is the best way to keep up with what's happening."
             />
           </strong>
         </p>
@@ -87,7 +87,7 @@ export const SignInBanner: React.FC = () => {
         <strong>
           <FormattedMessage
             id='sign_in_banner.mastodon_is'
-            defaultMessage="Mastodon is the best way to keep up with what's happening."
+            defaultMessage="x4ai is the best way to keep up with what's happening."
           />
         </strong>
       </p>

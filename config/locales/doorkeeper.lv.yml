@@ -123,7 +123,7 @@ lv:
         admin/accounts: Kontu pārvaldīšana
         admin/all: Visas administrēšanas funkcijas
         admin/reports: Ziņojumu pārvaldīšana
-        all: Pilna piekļuve Tavam Mastodon kontam
+        all: Pilna piekļuve Tavam x4ai kontam
         blocks: Liegtie
         bookmarks: Grāmatzīmes
         conversations: Sarunas
@@ -136,7 +136,7 @@ lv:
         media: Multividesu pielikumi
         mutes: Apklusinātie
         notifications: Paziņojumi
-        profile: Tavs Mastodon profils
+        profile: Tavs x4ai profils
         push: Uznirstošie paziņojumi
         reports: Ziņojumi
         search: Meklēt

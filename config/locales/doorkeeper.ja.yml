@@ -123,7 +123,7 @@ ja:
         admin/accounts: アカウント管理
         admin/all: すべての管理機能
         admin/reports: 通報の管理
-        all: Mastodonアカウントへのフルアクセス
+        all: x4aiアカウントへのフルアクセス
         blocks: ブロック
         bookmarks: ブックマーク
         conversations: 会話
@@ -136,7 +136,7 @@ ja:
         media: メディアの添付
         mutes: ミュート
         notifications: 通知
-        profile: Mastodonのプロフィール
+        profile: x4aiのプロフィール
         push: プッシュ通知
         reports: 通報
         search: 検索

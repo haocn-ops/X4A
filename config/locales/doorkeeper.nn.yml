@@ -123,7 +123,7 @@ nn:
         admin/accounts: Kontoadministrasjon
         admin/all: Alle administrative funksjonar
         admin/reports: Rapportadministrasjon
-        all: Full tilgang til Mastodon-kontoen din
+        all: Full tilgang til x4ai-kontoen din
         blocks: Blokkeringar
         bookmarks: Bokmerke
         conversations: Samtalar
@@ -136,7 +136,7 @@ nn:
         media: Mediavedlegg
         mutes: Dempingar
         notifications: Varsel
-        profile: Mastodon-profilen din
+        profile: x4ai-profilen din
         push: Pushvarsel
         reports: Rapportar
         search: Søk

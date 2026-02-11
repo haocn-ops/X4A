@@ -123,7 +123,7 @@ eo:
         admin/accounts: Administro de kontoj
         admin/all: Ĉiuj administraj funkcioj
         admin/reports: Administro de raportoj
-        all: Plena aliro al via Mastodon-konto
+        all: Plena aliro al via x4ai-konto
         blocks: Blokita
         bookmarks: Legosignoj
         conversations: Konversacioj
@@ -136,7 +136,7 @@ eo:
         media: Plurmediaj aldonaĵoj
         mutes: Silentigitaj
         notifications: Sciigoj
-        profile: Via Mastodon-profilo
+        profile: Via x4ai-profilo
         push: Puŝsciigoj
         reports: Raportoj
         search: Serĉi

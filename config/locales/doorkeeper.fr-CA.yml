@@ -123,7 +123,7 @@ fr-CA:
         admin/accounts: Gestion des comptes
         admin/all: Toutes les fonctionnalités d'administration
         admin/reports: Gestion des rapports
-        all: Accès complet à votre compte Mastodon
+        all: Accès complet à votre compte x4ai
         blocks: Bloqués
         bookmarks: Marque-pages
         conversations: Conversations
@@ -136,7 +136,7 @@ fr-CA:
         media: Fichiers médias
         mutes: Masqués
         notifications: Notifications
-        profile: Votre profil Mastodon
+        profile: Votre profil x4ai
         push: Notifications push
         reports: Signalements
         search: Recherche

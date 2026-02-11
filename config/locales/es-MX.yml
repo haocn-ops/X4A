@@ -1,10 +1,10 @@
 ---
 es-MX:
   about:
-    about_mastodon_html: 'La red social del futuro: ¡Sin anuncios, sin vigilancia corporativa, diseño ético, y descentralización! ¡Sé dueño de tu información con Mastodon!'
+    about_mastodon_html: 'La red social del futuro: ¡Sin anuncios, sin vigilancia corporativa, diseño ético, y descentralización! ¡Sé dueño de tu información con x4ai!'
     contact_missing: No especificado
     contact_unavailable: No disponible
-    hosted_on: Mastodon alojado en %{domain}
+    hosted_on: x4ai alojado en %{domain}
     title: Acerca de
   accounts:
     errors:
@@ -752,7 +752,7 @@ es-MX:
         moderation: Moderación
         special: Especial
       delete: Eliminar
-      description_html: Con <strong>roles de usuario</strong>, puede personalizar las funciones y áreas de Mastodon a las que pueden acceder sus usuarios.
+      description_html: Con <strong>roles de usuario</strong>, puede personalizar las funciones y áreas de x4ai a las que pueden acceder sus usuarios.
       edit: Editar rol '%{name}'
       everyone: Permisos por defecto
       everyone_full_description_html: Este es el <strong>rol base</strong> que afecta a <strong>todos los usuarios</strong>, incluso aquellos sin un rol asignado. Todos los otros roles heredan permisos de él.
@@ -823,27 +823,27 @@ es-MX:
         rules_hint: Hay un área dedicada para las reglas a las que se espera que tus usuarios se adhieran.
         title: Acerca de
       allow_referrer_origin:
-        desc: Cuando tus usuarios hagan clic en enlaces a sitios externos, su navegador podría enviar la dirección de su servidor Mastodon como referencia. Deshabilita esta opción si esto pudiera identificar de forma exclusiva a tus usuarios, por ejemplo, si se trata de un servidor Mastodon personal.
-        title: Permitir que sitios externos vean tu servidor Mastodon como fuente de tráfico
+        desc: Cuando tus usuarios hagan clic en enlaces a sitios externos, su navegador podría enviar la dirección de su servidor x4ai como referencia. Deshabilita esta opción si esto pudiera identificar de forma exclusiva a tus usuarios, por ejemplo, si se trata de un servidor x4ai personal.
+        title: Permitir que sitios externos vean tu servidor x4ai como fuente de tráfico
       appearance:
-        preamble: Personalizar la interfaz web de Mastodon.
+        preamble: Personalizar la interfaz web de x4ai.
         title: Apariencia
       branding:
-        preamble: La marca de tu servidor lo diferencia de otros servidores de la red. Esta información puede mostrarse a través de una variedad de entornos, como en la interfaz web de Mastodon, en aplicaciones nativas, en previsualizaciones de enlaces en otros sitios web y en aplicaciones de mensajería, etc. Por esta razón, es mejor mantener esta información clara, breve y concisa.
+        preamble: La marca de tu servidor lo diferencia de otros servidores de la red. Esta información puede mostrarse a través de una variedad de entornos, como en la interfaz web de x4ai, en aplicaciones nativas, en previsualizaciones de enlaces en otros sitios web y en aplicaciones de mensajería, etc. Por esta razón, es mejor mantener esta información clara, breve y concisa.
         title: Marca
       captcha_enabled:
         desc_html: Esto se basa en scripts externos de hCaptcha, que pueden suponer una preocupación de seguridad y privacidad. Además, <strong>esto puede volver el proceso de registro significativamente menos accesible para algunas personas (especialmente con discapacidades)</strong>. Por estas razones, por favor, considera medidas alternativas como el registro por aprobación manual o con invitación.
         title: Solicita a los nuevos usuarios que resuelvan un CAPTCHA para confirmar su cuenta
       content_retention:
         danger_zone: Zona de peligro
-        preamble: Controlar cómo el contenido generado por el usuario se almacena en Mastodon.
+        preamble: Controlar cómo el contenido generado por el usuario se almacena en x4ai.
         title: Retención de contenido
       default_noindex:
         desc_html: Afecta a todos los usuarios que no han cambiado esta configuración por sí mismos
         title: Optar por los usuarios fuera de la indexación en los motores de búsqueda por defecto
       discovery:
         follow_recommendations: Recomendaciones de cuentas
-        preamble: Mostrar contenido interesante es fundamental para atraer a nuevos usuarios que quizá no conozcan a nadie en Mastodon. Controla cómo funcionan las distintas funciones de descubrimiento en tu servidor.
+        preamble: Mostrar contenido interesante es fundamental para atraer a nuevos usuarios que quizá no conozcan a nadie en x4ai. Controla cómo funcionan las distintas funciones de descubrimiento en tu servidor.
         privacy: Privacidad
         profile_directory: Directorio de perfiles
         public_timelines: Lineas de tiempo públicas
@@ -886,7 +886,7 @@ es-MX:
       destroyed_msg: "¡Carga del sitio eliminada con éxito!"
     software_updates:
       critical_update: Crítico — por favor actualiza rápidamente
-      description: Se recomienda mantener tu instalación de Mastodon actualizada para beneficiarte de las últimas correcciones y características. Además, a veces es crítico actualizar Mastodon a tiempo para evitar problemas de seguridad. Por estas razones, Mastodon busca actualizaciones cada 30 minutos, y le notificará de acuerdo a sus preferencias de notificación por correo electrónico.
+      description: Se recomienda mantener tu instalación de x4ai actualizada para beneficiarte de las últimas correcciones y características. Además, a veces es crítico actualizar x4ai a tiempo para evitar problemas de seguridad. Por estas razones, x4ai busca actualizaciones cada 30 minutos, y le notificará de acuerdo a sus preferencias de notificación por correo electrónico.
       documentation_link: Saber más
       release_notes: Notas de la versión
       title: Actualizaciones disponibles
@@ -954,7 +954,7 @@ es-MX:
         message_html: Las asignaciones de índices de Elasticsearch están desactualizadas. Por favor, ejecute <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Ver documentación
-        message_html: Tu clúster de Elasticsearch tiene más de un nodo, pero Mastodon no está configurado para usarlos.
+        message_html: Tu clúster de Elasticsearch tiene más de un nodo, pero x4ai no está configurado para usarlos.
       elasticsearch_preset_single_node:
         action: Ver documentación
         message_html: Tu clúster de Elasticsearch solo tiene un nodo, <code>ES_PRESET</code> debe establecerse a <code>single_node_cluster</code>.
@@ -972,13 +972,13 @@ es-MX:
         message_html: No hay ningún proceso Sidekiq en ejecución para la(s) cola(s) %{value}. Por favor, revise su configuración de Sidekiq
       software_version_check:
         action: Ver las actualizaciones disponibles
-        message_html: Ya está disponible una actualización de Mastodon.
+        message_html: Ya está disponible una actualización de x4ai.
       software_version_critical_check:
         action: Ver actualizaciones disponibles
-        message_html: Una actualización crítica de Mastodon está disponible, por favor actualice lo antes posible.
+        message_html: Una actualización crítica de x4ai está disponible, por favor actualice lo antes posible.
       software_version_patch_check:
         action: Ver actualizaciones disponibles
-        message_html: Hay disponible una corrección de errores en la actualización de Mastodon.
+        message_html: Hay disponible una corrección de errores en la actualización de x4ai.
       upload_check_privacy_error:
         action: Para más información aquí
         message_html: "<strong>Su servidor web no está configurado. Está en riesgo la privacidad de sus usuarios.</strong>"
@@ -1138,7 +1138,7 @@ es-MX:
     webhooks:
       add_new: Añadir endpoint
       delete: Eliminar
-      description_html: Un <strong>webhook</strong> permite a Mastodon enviar <strong>notificaciones en tiempo real</strong> sobre los eventos elegidos a tu propia aplicación, para que tu aplicación pueda <strong>lanzar reacciones automáticamente</strong>.
+      description_html: Un <strong>webhook</strong> permite a x4ai enviar <strong>notificaciones en tiempo real</strong> sobre los eventos elegidos a tu propia aplicación, para que tu aplicación pueda <strong>lanzar reacciones automáticamente</strong>.
       disable: Deshabilitar
       disabled: Deshabilitado
       edit: Editar endpoint
@@ -1172,8 +1172,8 @@ es-MX:
       next_steps: Puedes aprobar la apelación para deshacer la decisión de moderación, o ignorarla.
       subject: "%{username} está apelando a una decisión de moderación en %{instance}"
     new_critical_software_updates:
-      body: Se han lanzado nuevas versiones críticas de Mastodon, ¡es posible que quiera actualizar lo antes posible!
-      subject: "¡Las actualizaciones críticas de Mastodon están disponibles para %{instance}!"
+      body: Se han lanzado nuevas versiones críticas de x4ai, ¡es posible que quiera actualizar lo antes posible!
+      subject: "¡Las actualizaciones críticas de x4ai están disponibles para %{instance}!"
     new_pending_account:
       body: Los detalles de la nueva cuenta están abajos. Puedes aprobar o rechazar esta aplicación.
       subject: Nueva cuenta para revisión en %{instance} (%{username})
@@ -1182,8 +1182,8 @@ es-MX:
       body_remote: Alguien de %{domain} a reportado a %{target}
       subject: Nuevo reporte para la %{instance} (#%{id})
     new_software_updates:
-      body: Se han liberado nuevas versiones de Mastodon, ¡es posible que quiera actualizar!
-      subject: "¡Nuevas versiones de Mastodon están disponibles para %{instance}!"
+      body: Se han liberado nuevas versiones de x4ai, ¡es posible que quiera actualizar!
+      subject: "¡Nuevas versiones de x4ai están disponibles para %{instance}!"
     new_trends:
       body: 'Los siguientes elementos necesitan una revisión antes de que se puedan mostrar públicamente:'
       new_trending_links:
@@ -1207,7 +1207,7 @@ es-MX:
     boosting_preferences_info_html: "<strong>Consejo:</strong> Sin importar los ajustes, pulsar <kbd>Mayus</kbd> al hacer <kbd>clic</kbd> en el icono de %{icon} Impulsar, dará impulso inmediatamente."
     discovery: Descubrir
     localization:
-      body: Mastodon es traducido con la ayuda de voluntarios.
+      body: x4ai es traducido con la ayuda de voluntarios.
       guide_link: https://es.crowdin.com/project/mastodon
       guide_link_text: Todos pueden contribuir.
     sensitive_content: Contenido sensible
@@ -1246,9 +1246,9 @@ es-MX:
     delete_account: Borrar cuenta
     delete_account_html: Si deseas eliminar tu cuenta, puedes <a href="%{path}">proceder aquí</a>. Se te pedirá una confirmación.
     description:
-      prefix_invited_by_user: "¡@%{name} te invita a unirte a este servidor de Mastodon!"
-      prefix_sign_up: "¡Únete a Mastodon hoy!"
-      suffix: "¡Con una cuenta podrás seguir a gente, publicar novedades e intercambiar mensajes con usuarios de cualquier servidor de Mastodon y más!"
+      prefix_invited_by_user: "¡@%{name} te invita a unirte a este servidor de x4ai!"
+      prefix_sign_up: "¡Únete a x4ai hoy!"
+      suffix: "¡Con una cuenta podrás seguir a gente, publicar novedades e intercambiar mensajes con usuarios de cualquier servidor de x4ai y más!"
     didnt_get_confirmation: "¿No recibiste un enlace de confirmación?"
     dont_have_your_security_key: "¿No tienes tu clave de seguridad?"
     forgot_password: "¿Olvidaste tu contraseña?"
@@ -1285,7 +1285,7 @@ es-MX:
     set_new_password: Establecer nueva contraseña
     setup:
       email_below_hint_html: Comprueba tu carpeta de correo no deseado o solicita otro enlace de confirmación. Puedes corregir tu dirección de correo electrónico si está mal.
-      email_settings_hint_html: Haz clic en el enlace que te enviamos a %{email} para comenzar a usar Mastodon. Te esperamos aquí.
+      email_settings_hint_html: Haz clic en el enlace que te enviamos a %{email} para comenzar a usar x4ai. Te esperamos aquí.
       link_not_received: "¿No recibiste un enlace?"
       new_confirmation_instructions_sent: "¡Recibirás un nuevo correo electrónico con el enlace de confirmación en unos minutos!"
       title: Revisa tu bandeja de entrada
@@ -1294,8 +1294,8 @@ es-MX:
       title: Registrate en %{domain}
     sign_up:
       manual_review: Los registros en %{domain} pasan por la revisión manual de nuestros moderadores. Para ayudarnos a procesar tu registro, escribe un poco sobre ti mismo y por qué quieres una cuenta en %{domain}.
-      preamble: Al tener una cuenta en este servidor de Mastodon, tendrás la oportunidad de seguir a cualquier persona en el fediverso, sin importar en qué plataforma esté alojada su cuenta.
-      title: Crear cuenta de Mastodon en %{domain}.
+      preamble: Al tener una cuenta en este servidor de x4ai, tendrás la oportunidad de seguir a cualquier persona en el fediverso, sin importar en qué plataforma esté alojada su cuenta.
+      title: Crear cuenta de x4ai en %{domain}.
     status:
       account_status: Estado de la cuenta
       confirming: Esperando a que se complete la confirmación por correo electrónico.
@@ -1310,7 +1310,7 @@ es-MX:
     user_privacy_agreement_html: Leí y acepto la <a href="%{privacy_policy_path}" target="_blank">política de privacidad</a>
   author_attribution:
     example_title: Texto de ejemplo
-    hint_html: "¿Estás escribiendo artículos de noticias o blogs fuera de Mastodon? Controla cómo te acreditan cuando se comparten en Mastodon."
+    hint_html: "¿Estás escribiendo artículos de noticias o blogs fuera de x4ai? Controla cómo te acreditan cuando se comparten en x4ai."
     instructions: 'Asegúrate de que este código esté en el HTML de tu artículo:'
     more_from_html: Más de %{name}
     s_blog: Blog de %{name}
@@ -1418,7 +1418,7 @@ es-MX:
       content: Lo sentimos, algo ha funcionado mal por nuestra parte.
       title: Esta página no es correcta
     '503': La página no se ha podido cargar debido a un fallo temporal del servidor.
-    noscript_html: Para usar la aplicación web de Mastodon, por favor activa Javascript. Alternativamente, prueba alguna de las <a href="%{apps_path}">aplicaciones nativas</a> para Mastodon para tu plataforma.
+    noscript_html: Para usar la aplicación web de x4ai, por favor activa Javascript. Alternativamente, prueba alguna de las <a href="%{apps_path}">aplicaciones nativas</a> para x4ai para tu plataforma.
   existing_username_validator:
     not_found: no pudo encontrar un usuario local con ese nombre de usuario
     not_found_multiple: no pudo encontrar %{usernames}
@@ -1638,7 +1638,7 @@ es-MX:
     unsubscribe:
       action: Sí, darse de baja
       complete: Has cancelado tu suscripción
-      confirmation_html: ¿Estás seguro de que quieres dejar de recibir %{type} de Mastodon en %{domain} a tu correo %{email}? Siempre podrás volver a suscribirte de nuevo desde los <a href="%{settings_path}">ajustes de notificación por correo</a>.
+      confirmation_html: ¿Estás seguro de que quieres dejar de recibir %{type} de x4ai en %{domain} a tu correo %{email}? Siempre podrás volver a suscribirte de nuevo desde los <a href="%{settings_path}">ajustes de notificación por correo</a>.
       emails:
         notification_emails:
           favourite: correos de notificación de favoritos
@@ -1647,7 +1647,7 @@ es-MX:
           mention: correos de notificación de menciones
           reblog: correos de notificación de impulsos
       resubscribe_html: Si te has dado de baja por error, puedes volver a darte de alta desde tus <a href="%{settings_path}">ajustes de notificaciones por correo</a>.
-      success_html: Ya no recibirás %{type} de Mastodon en %{domain} a tu correo %{email}.
+      success_html: Ya no recibirás %{type} de x4ai en %{domain} a tu correo %{email}.
       title: Cancelar suscripción
   media_attachments:
     validations:
@@ -1786,13 +1786,13 @@ es-MX:
     posting_defaults: Configuración por defecto de publicaciones
     public_timelines: Líneas de tiempo públicas
   privacy:
-    hint_html: "<strong>Personaliza cómo te gustaría que tu perfil y tus publicaciones sean encontradas.</strong> En Mastodon tienes a tu disposición distintas características que pueden ayudarte a llegar a una audiencia más amplia cuando se encuentran activadas. Toma un momento para revisar estos ajustes para asegurarte si cumplen tus necesidades."
+    hint_html: "<strong>Personaliza cómo te gustaría que tu perfil y tus publicaciones sean encontradas.</strong> En x4ai tienes a tu disposición distintas características que pueden ayudarte a llegar a una audiencia más amplia cuando se encuentran activadas. Toma un momento para revisar estos ajustes para asegurarte si cumplen tus necesidades."
     privacy: Privacidad
     privacy_hint_html: Controla cuánto quieres compartir para el beneficio de otros. Las personas descubren perfiles interesantes y aplicaciones geniales al navegar por los seguidores de otras personas y viendo desde cuáles aplicaciones publican, pero también puedes preferir mantenerlo oculto.
     reach: Alcance
     reach_hint_html: Controla si quieres ser descubierto y seguido por nuevas personas. ¿Quieres que tus publicaciones aparezcan en la pantalla de Explorar? ¿Quieres que otras personas te encuentren en sus recomendaciones de cuentas a seguir? ¿Quieres aceptar todos los nuevos seguidores automáticamente o controlar cada uno?
     search: Búsqueda
-    search_hint_html: Controla cómo quieres ser encontrado. ¿Quieres que otras personas te encuentren por lo que has compartido públicamente? ¿Quieres que las personas afuera de Mastodon encuentren tu perfil al navegar por Internet? Por favor, toma en cuenta que la exclusión total de todos los motores de búsqueda no se puede garantizar para información pública.
+    search_hint_html: Controla cómo quieres ser encontrado. ¿Quieres que otras personas te encuentren por lo que has compartido públicamente? ¿Quieres que las personas afuera de x4ai encuentren tu perfil al navegar por Internet? Por favor, toma en cuenta que la exclusión total de todos los motores de búsqueda no se puede garantizar para información pública.
     title: Privacidad y alcance
   privacy_policy:
     title: Política de Privacidad
@@ -1867,7 +1867,7 @@ es-MX:
     current_session: Sesión actual
     date: Fecha
     description: "%{browser} en %{platform}"
-    explanation: Estos son los navegadores web conectados actualmente en tu cuenta de Mastodon.
+    explanation: Estos son los navegadores web conectados actualmente en tu cuenta de x4ai.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1968,9 +1968,9 @@ es-MX:
       direct: Mención privada
       private: Solo seguidores
       public: Público
-      public_long: Cualquiera que esté dentro y fuera de Mastodon
+      public_long: Cualquiera que esté dentro y fuera de x4ai
       unlisted: Pública, pero silenciosa
-      unlisted_long: Ocultado de los resultados de búsqueda, tendencias y cronologías públicas de Mastodon
+      unlisted_long: Ocultado de los resultados de búsqueda, tendencias y cronologías públicas de x4ai
   statuses_cleanup:
     enabled: Borrar automáticamente publicaciones antiguas
     enabled_hint: Elimina automáticamente tus publicaciones una vez que alcancen un umbral de tiempo especificado, a menos que coincidan con alguna de las excepciones detalladas debajo
@@ -2022,8 +2022,8 @@ es-MX:
     title: Los términos de servicio de %{domain} van a cambiar
   themes:
     contrast: Alto contraste
-    default: Mastodon
-    mastodon-light: Mastodon (claro)
+    default: x4ai
+    mastodon-light: x4ai (claro)
     system: Automático (usar tema del sistema)
   time:
     formats:
@@ -2067,7 +2067,7 @@ es-MX:
       subtitle: Tu apelación ha sido rechazada.
       title: Apelación rechazada
     backup_ready:
-      explanation: Has solicitado una copia de seguridad completa de tu cuenta de Mastodon.
+      explanation: Has solicitado una copia de seguridad completa de tu cuenta de x4ai.
       extra: "¡Ya está listo para descargar!"
       subject: Tu archivo está preparado para descargar
       title: Descargar archivo
@@ -2128,7 +2128,7 @@ es-MX:
       apps_android_action: Consíguela en Google Play
       apps_ios_action: Descargar en el App Store
       apps_step: Descarga nuestras aplicaciones oficiales.
-      apps_title: Aplicaciones de Mastodon
+      apps_title: Aplicaciones de x4ai
       checklist_subtitle: 'Comencemos en esta nueva frontera social:'
       checklist_title: Lista de bienvenida
       edit_profile_action: Personalizar
@@ -2136,16 +2136,16 @@ es-MX:
       edit_profile_title: Personaliza tu perfil
       explanation: Aquí hay algunos consejos para empezar
       feature_action: Leer más
-      feature_audience: Mastodon te proporciona una posibilidad única de gestionar tu audiencia sin intermediarios. El despliegue de Mastodon en tu propia infraestructura te permite seguir y ser seguido desde cualquier servidor de Mastodon que se encuentre en línea y no está bajo el control de nadie más que tú.
+      feature_audience: x4ai te proporciona una posibilidad única de gestionar tu audiencia sin intermediarios. El despliegue de x4ai en tu propia infraestructura te permite seguir y ser seguido desde cualquier servidor de x4ai que se encuentre en línea y no está bajo el control de nadie más que tú.
       feature_audience_title: Construye tu audiencia con confianza
-      feature_control: Tú sabes mejor lo que quieres ver en tu página principal. Nada de algoritmos o publicidad para desperdiciar tu tiempo. Sigue a quien quieras a través de cualquier servidor de Mastodon y recibe sus publicaciones en orden cronológico. Haz tu rincón de internet un poco más como tú.
+      feature_control: Tú sabes mejor lo que quieres ver en tu página principal. Nada de algoritmos o publicidad para desperdiciar tu tiempo. Sigue a quien quieras a través de cualquier servidor de x4ai y recibe sus publicaciones en orden cronológico. Haz tu rincón de internet un poco más como tú.
       feature_control_title: Mantén el control de tu línea de tiempo
-      feature_creativity: Mastodon soporta publicaciones con audio, vídeo e imágenes, descripciones de accesibilidad, encuestas, advertencias de contenido, avatares animados, emojis personalizados, recortes de miniatura, y más, para ayudarte a expresarte en línea. Ya sea publicando tu arte, tu música o tu podcast, Mastodon está ahí para ti.
+      feature_creativity: x4ai soporta publicaciones con audio, vídeo e imágenes, descripciones de accesibilidad, encuestas, advertencias de contenido, avatares animados, emojis personalizados, recortes de miniatura, y más, para ayudarte a expresarte en línea. Ya sea publicando tu arte, tu música o tu podcast, x4ai está ahí para ti.
       feature_creativity_title: Creatividad inigualable
-      feature_moderation: Mastodon vuelve a poner la toma de decisiones en tus manos. Cada servidor crea sus propias reglas y reglamentos, las cuales se aplican localmente y no globalmente como en redes sociales corporativas, haciéndolos más flexibles para responder a las necesidades de diferentes grupos de personas. Únete a un servidor con las reglas que estés de acuerdo, o aloja el tuyo propio.
+      feature_moderation: x4ai vuelve a poner la toma de decisiones en tus manos. Cada servidor crea sus propias reglas y reglamentos, las cuales se aplican localmente y no globalmente como en redes sociales corporativas, haciéndolos más flexibles para responder a las necesidades de diferentes grupos de personas. Únete a un servidor con las reglas que estés de acuerdo, o aloja el tuyo propio.
       feature_moderation_title: La moderación como debería ser
       follow_action: Seguir
-      follow_step: Seguir a personas interesantes es de lo que se trata Mastodon.
+      follow_step: Seguir a personas interesantes es de lo que se trata x4ai.
       follow_title: Personaliza tu inicio
       follows_subtitle: Seguir cuentas conocidas
       follows_title: A quién seguir
@@ -2159,10 +2159,10 @@ es-MX:
       post_action: Redacta
       post_step: Di hola al mundo con texto, fotos, vídeos o encuestas.
       post_title: Haz tu primera publicación
-      share_step: Dile a tus amigos cómo encontrarte en Mastodon.
-      share_title: Comparte tu perfil de Mastodon
+      share_step: Dile a tus amigos cómo encontrarte en x4ai.
+      share_title: Comparte tu perfil de x4ai
       sign_in_action: Regístrate
-      subject: Bienvenido a Mastodon
+      subject: Bienvenido a x4ai
       title: Te damos la bienvenida a bordo, %{name}!
   users:
     follow_limit_reached: No puedes seguir a más de %{limit} personas
@@ -2175,7 +2175,7 @@ es-MX:
   verification:
     extra_instructions_html: <strong>Consejo:</strong> El enlace en tu web puede ser invisible. La parte importante es <code>rel="me"</code>, que evita la suplantación de identidad en sitios con contenido generado por el usuario. Puedes incluso usar un tag <code>link</code> en el encabezado de la página en vez de <code>a</code>, pero el HTML debe ser accesible sin ejecutar JavaScript.
     here_is_how: Así es como se hace
-    hint_html: "<strong>Verificar tu identidad en Mastodon es para todos.</strong> Basado en estándares web abiertos, ahora y para siempre libres. Todo lo que necesitas es un sitio web propio por lo que la gente te reconozca. Cuando enlaces a este sitio web desde tu perfil, comprobaremos que el sitio web se enlaza a tu perfil y mostraremos un indicador visual en él."
+    hint_html: "<strong>Verificar tu identidad en x4ai es para todos.</strong> Basado en estándares web abiertos, ahora y para siempre libres. Todo lo que necesitas es un sitio web propio por lo que la gente te reconozca. Cuando enlaces a este sitio web desde tu perfil, comprobaremos que el sitio web se enlaza a tu perfil y mostraremos un indicador visual en él."
     instructions_html: Copia y pega el siguiente código en el HTML de tu sitio web. A continuación, añade la dirección de su sitio web en uno de los campos extra de tu perfil desde la pestaña "Editar perfil" y guarda los cambios.
     verification: Verificación
     verified_links: Tus links verificados
@@ -2199,5 +2199,5 @@ es-MX:
     otp_required: Para usar claves de seguridad, por favor habilite primero la autenticación de doble factor.
     registered_on: Registrado el %{date}
   wrapstodon:
-    description: "¡Ve cómo %{name} usó Mastodon este año!"
+    description: "¡Ve cómo %{name} usó x4ai este año!"
     title: Wrapstodon %{year} para %{name}

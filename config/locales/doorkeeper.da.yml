@@ -123,7 +123,7 @@ da:
         admin/accounts: Kontihåndtering
         admin/all: Alle administrative funktioner
         admin/reports: Administration af anmeldelser
-        all: Fuld adgang til din Mastodon-konto
+        all: Fuld adgang til din x4ai-konto
         blocks: Blokeringer
         bookmarks: Bogmærker
         conversations: Samtaler
@@ -136,7 +136,7 @@ da:
         media: Medievedhæftninger
         mutes: Skjulte
         notifications: Notifikationer
-        profile: Din Mastodon-profil
+        profile: Din x4ai-profil
         push: Push-notifikationer
         reports: Anmeldelser
         search: Søgning

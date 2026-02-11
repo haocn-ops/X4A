@@ -123,7 +123,7 @@ hu:
         admin/accounts: Fiókok adminisztrációja
         admin/all: Minden adminisztratív funkció
         admin/reports: Bejelentések adminisztrációja
-        all: Teljes hozzáférés a Mastodon fiókodhoz
+        all: Teljes hozzáférés a x4ai fiókodhoz
         blocks: Letiltások
         bookmarks: Könyvjelzők
         conversations: Beszélgetések
@@ -136,7 +136,7 @@ hu:
         media: Médiamellékletek
         mutes: Némítások
         notifications: Értesítések
-        profile: Saját Mastodon-profil
+        profile: Saját x4ai-profil
         push: Push értesítések
         reports: Bejelentések
         search: Keresés

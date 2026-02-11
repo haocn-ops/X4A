@@ -123,7 +123,7 @@ bg:
         admin/accounts: Администриране на акаунтите
         admin/all: Всички административни функции
         admin/reports: Администриране на докладите
-        all: Пълен достъп до акаунта ви в Mastodon
+        all: Пълен достъп до акаунта ви в x4ai
         blocks: Блокирания
         bookmarks: Отметки
         conversations: Разговори
@@ -136,7 +136,7 @@ bg:
         media: Прикачена мултимедия
         mutes: Заглушения
         notifications: Известия
-        profile: Вашият профил в Mastodon
+        profile: Вашият профил в x4ai
         push: Изскачащи известия
         reports: Доклади
         search: Търсене

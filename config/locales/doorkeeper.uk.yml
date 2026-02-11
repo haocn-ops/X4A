@@ -123,7 +123,7 @@ uk:
         admin/accounts: Адміністрація облікових записів
         admin/all: Усі адміністративні функції
         admin/reports: Адміністрація звітів
-        all: Повний доступ до вашого облікового запису Mastodon
+        all: Повний доступ до вашого облікового запису x4ai
         blocks: Блокування
         bookmarks: Закладки
         conversations: Бесіди
@@ -136,7 +136,7 @@ uk:
         media: Мультимедійні вкладення
         mutes: Нехтувані
         notifications: Сповіщення
-        profile: Ваш профіль Mastodon
+        profile: Ваш профіль x4ai
         push: Push-сповіщення
         reports: Скарги
         search: Пошук

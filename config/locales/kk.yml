@@ -1,10 +1,10 @@
 ---
 kk:
   about:
-    about_mastodon_html: Mastodon - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.
+    about_mastodon_html: x4ai - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.
     contact_missing: Бапталмаған
     contact_unavailable: Белгісіз
-    hosted_on: Mastodon орнатылған %{domain} доменінде
+    hosted_on: x4ai орнатылған %{domain} доменінде
   accounts:
     followers:
       one: Оқырман
@@ -327,7 +327,7 @@ kk:
     description:
       prefix_invited_by_user: "@%{name} сізді Желіге қосылуға шақырады!"
       prefix_sign_up: Желіге бүгін қосылыңыз!
-      suffix: Аккаунтыңызбен сіз кез-келген Mastodon серверінен және желідегі басқа адамдарды оқып, пост жаза аласыз және хат алмаса аласыз!
+      suffix: Аккаунтыңызбен сіз кез-келген x4ai серверінен және желідегі басқа адамдарды оқып, пост жаза аласыз және хат алмаса аласыз!
     forgot_password: Құпиясөзіңізді ұмытып қалдыңыз ба?
     invalid_reset_password_token: Құпиясөз қайтып алу қолжетімді емес немесе мерзімі аяқталған. Қайтадан сұратыңыз.
     login: Кіру
@@ -393,7 +393,7 @@ kk:
       content: Кешірерсіз, бірақ қазір бір қате пайда болып тұр.
       title: Бұл бет дұрыс емес екен
     '503': Уақытша сервер қатесі себебінен параққа қызмет көрсету мүмкін болмады.
-    noscript_html: Mastodon веб қосымшасын қолдану үшін, JavaScript қосыңыз. Болмай жатса, <a href="%{apps_path}">мына қосымшаларды</a> қосып көріңіз, Mastodon қолдану үшін.
+    noscript_html: x4ai веб қосымшасын қолдану үшін, JavaScript қосыңыз. Болмай жатса, <a href="%{apps_path}">мына қосымшаларды</a> қосып көріңіз, x4ai қолдану үшін.
   existing_username_validator:
     not_found: осындай логині бар бар жергілікті пайдаланушы табылмады
     not_found_multiple: табылмады %{usernames}
@@ -651,9 +651,9 @@ kk:
   tags:
     does_not_match_previous_name: алдыңғы атқа сәйкес келмейді
   themes:
-    contrast: Mastodon (Жоғары контраст)
-    default: Mastodon (Қою)
-    mastodon-light: Mastodon (Ашық)
+    contrast: x4ai (Жоғары контраст)
+    default: x4ai (Қою)
+    mastodon-light: x4ai (Ашық)
   two_factor_authentication:
     disable: Ажырату
     enabled: Екі-факторлы авторизация қосылған
@@ -680,7 +680,7 @@ kk:
         suspend: Аккаунт тоқтатылды
     welcome:
       explanation: Мына кеңестерді шолып өтіңіз
-      subject: Mastodon Желісіне қош келдіңіз
+      subject: x4ai Желісіне қош келдіңіз
       title: Ортаға қош келдің, %{name}!
   users:
     follow_limit_reached: Сіз %{limit} лимитінен көп адамға жазыла алмайсыз

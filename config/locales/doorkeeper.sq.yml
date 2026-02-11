@@ -123,7 +123,7 @@ sq:
         admin/accounts: Administrim llogarish
         admin/all: Krejt funksionet administrative
         admin/reports: Administrim i raporteve
-        all: Hyrje të plotë në llogarinë tuaj Mastodon
+        all: Hyrje të plotë në llogarinë tuaj x4ai
         blocks: Blloqe
         bookmarks: Faqerojtës
         conversations: Biseda
@@ -136,7 +136,7 @@ sq:
         media: Bashkëngjitje media
         mutes: Heshtime
         notifications: Njoftime
-        profile: Profili juaj Mastodon
+        profile: Profili juaj x4ai
         push: Njoftime Push
         reports: Raportime
         search: Kërkim

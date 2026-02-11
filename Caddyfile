@@ -1,3 +1,4 @@
-your-domain.example.com {
+localhost {
+  tls internal
   reverse_proxy web:3000
 }

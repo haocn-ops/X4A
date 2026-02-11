@@ -123,7 +123,7 @@ nl:
         admin/accounts: Accountbeheer
         admin/all: Alle beheerfuncties
         admin/reports: Rapportagebeheer
-        all: Volledige toegang tot je Mastodon-account
+        all: Volledige toegang tot je x4ai-account
         blocks: Blokkeren
         bookmarks: Bladwijzers
         conversations: Gesprekken
@@ -136,7 +136,7 @@ nl:
         media: Mediabijlagen
         mutes: Negeren
         notifications: Meldingen
-        profile: Jouw Mastodonprofiel
+        profile: Jouw x4aiprofiel
         push: Pushmeldingen
         reports: Rapportages
         search: Zoeken

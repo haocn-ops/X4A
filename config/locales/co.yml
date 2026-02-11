@@ -1,10 +1,10 @@
 ---
 co:
   about:
-    about_mastodon_html: 'A rete suciale di u futuru: micca pubblicità, micca surveglianza, cuncezzione etica, è dicentralizazione! Firmate in cuntrollu di i vostri dati cù Mastodon!'
+    about_mastodon_html: 'A rete suciale di u futuru: micca pubblicità, micca surveglianza, cuncezzione etica, è dicentralizazione! Firmate in cuntrollu di i vostri dati cù x4ai!'
     contact_missing: Mancante
     contact_unavailable: Micca dispunibule
-    hosted_on: Mastodon allughjatu nant’à %{domain}
+    hosted_on: x4ai allughjatu nant’à %{domain}
   accounts:
     followers:
       one: Abbunatu·a
@@ -510,7 +510,7 @@ co:
     animations_and_accessibility: Animazione è accessibilità
     discovery: Scuperta
     localization:
-      body: Mastodon hè tradottu da una squadra di vuluntari.
+      body: x4ai hè tradottu da una squadra di vuluntari.
       guide_link: https://fr.crowdin.com/project/mastodon
       guide_link_text: Tuttu u mondu pò participà.
     sensitive_content: Cuntinutu sensibile
@@ -530,9 +530,9 @@ co:
     delete_account: Sguassà u contu
     delete_account_html: S’è voi vulete toglie u vostru contu <a href="%{path}">ghjè quì</a>. Duverete cunfirmà a vostra scelta.
     description:
-      prefix_invited_by_user: "@%{name} v'invita à raghjunghje stu servore di Mastodon!"
-      prefix_sign_up: Arregistratevi nant'à Mastodon oghji!
-      suffix: Cù un contu, puderete siguità l'altri, pustà statuti è scambià missaghji cù l'utilizatori di tutti i servori Mastodon è ancu di più!
+      prefix_invited_by_user: "@%{name} v'invita à raghjunghje stu servore di x4ai!"
+      prefix_sign_up: Arregistratevi nant'à x4ai oghji!
+      suffix: Cù un contu, puderete siguità l'altri, pustà statuti è scambià missaghji cù l'utilizatori di tutti i servori x4ai è ancu di più!
     dont_have_your_security_key: Ùn avete micca a chjave di sicurità?
     forgot_password: Chjave scurdata?
     invalid_reset_password_token: U ligame di riinizializazione di a chjave d’accessu hè spiratu o ùn hè micca validu. Pudete dumandà un'altru ligame.
@@ -610,7 +610,7 @@ co:
       content: Scusate, mà c’hè statu un prublemu cù u nostru servore.
       title: Sta pagina ùn hè curretta
     '503': A pagina ùn hè micca stata servita per via di un prublemu timpuraneu di u servore.
-    noscript_html: Mastodon nant’à u web hà bisognu di JavaScript per funziunà. Pudete ancu pruvà <a href="%{apps_path}">l’applicazione native</a> per a vostra piattaforma.
+    noscript_html: x4ai nant’à u web hà bisognu di JavaScript per funziunà. Pudete ancu pruvà <a href="%{apps_path}">l’applicazione native</a> per a vostra piattaforma.
   existing_username_validator:
     not_found: ùn si pudeva micca truvà un'utilizatore lucale cù stu cugnome
     not_found_multiple: ùn si pudeva micca truvà %{usernames}
@@ -859,7 +859,7 @@ co:
       weibo: Weibo
     current_session: Sessione attuale
     description: "%{browser} nant’à %{platform}"
-    explanation: Quessi sò i navigatori cunnettati à u vostru contu Mastodon.
+    explanation: Quessi sò i navigatori cunnettati à u vostru contu x4ai.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -880,7 +880,7 @@ co:
     aliases: Pseudonimi di contu
     appearance: Apparenza
     authorized_apps: Applicazione auturizate
-    back: Ritornu nant’à Mastodon
+    back: Ritornu nant’à x4ai
     delete: Suppressione di u contu
     development: Sviluppu
     edit_profile: Mudificà u prufile
@@ -951,9 +951,9 @@ co:
   tags:
     does_not_match_previous_name: ùn currisponde micca à l'anzianu nome
   themes:
-    contrast: Mastodon (Cuntrastu altu)
-    default: Mastodon (Scuru)
-    mastodon-light: Mastodon (Chjaru)
+    contrast: x4ai (Cuntrastu altu)
+    default: x4ai (Scuru)
+    mastodon-light: x4ai (Chjaru)
   time:
     formats:
       default: "%d %b %Y, %H:%M"
@@ -990,7 +990,7 @@ co:
         suspend: Contu suspesu
     welcome:
       explanation: Eccu alcune idee per principià
-      subject: Benvenutu·a nant’à Mastodon
+      subject: Benvenutu·a nant’à x4ai
       title: Benvenutu·a, %{name}!
   users:
     follow_limit_reached: Ùn pidete seguità più di %{limit} conti

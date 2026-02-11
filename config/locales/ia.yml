@@ -1,10 +1,10 @@
 ---
 ia:
   about:
-    about_mastodon_html: 'Le rete social del futuro: nulle publicitate, nulle surveliantia corporative, conception ethic, e decentralisation! Mantene le controlo de tu datos con Mastodon!'
+    about_mastodon_html: 'Le rete social del futuro: nulle publicitate, nulle surveliantia corporative, conception ethic, e decentralisation! Mantene le controlo de tu datos con x4ai!'
     contact_missing: Non definite
     contact_unavailable: N/D
-    hosted_on: Mastodon albergate sur %{domain}
+    hosted_on: x4ai albergate sur %{domain}
     title: A proposito
   accounts:
     followers:
@@ -747,7 +747,7 @@ ia:
         moderation: Moderation
         special: Special
       delete: Deler
-      description_html: Le <strong>rolos de usator</strong> permitte personalisar le functiones e areas de Mastodon al quales le usator pote acceder.
+      description_html: Le <strong>rolos de usator</strong> permitte personalisar le functiones e areas de x4ai al quales le usator pote acceder.
       edit: Modificar le rolo '%{name}'
       everyone: Permissiones predefinite
       everyone_full_description_html: Iste es le <strong>rolo de base</strong> que affecta <strong>tote le usatores</strong>, mesmo illes sin rolo assignate. Tote le altere rolos heredita le permissiones de illo.
@@ -818,27 +818,27 @@ ia:
         rules_hint: Il ha un area dedicate al regulas que tu usatores debe acceptar.
         title: A proposito
       allow_referrer_origin:
-        desc: Quando tu usatores clicca sur ligamines a sitos externe, lor navigator pote inviar le adresse de tu servitor Mastodon como le referente. Disactiva iste option si illo pote identificar univocamente tu usatores, p. ex., si isto es un servitor Mastodon personal.
-        title: Permiter que sitos externe vide tu servitor Mastodon como un fonte de traffico
+        desc: Quando tu usatores clicca sur ligamines a sitos externe, lor navigator pote inviar le adresse de tu servitor x4ai como le referente. Disactiva iste option si illo pote identificar univocamente tu usatores, p. ex., si isto es un servitor x4ai personal.
+        title: Permiter que sitos externe vide tu servitor x4ai como un fonte de traffico
       appearance:
-        preamble: Personalisar le interfacie web de Mastodon.
+        preamble: Personalisar le interfacie web de x4ai.
         title: Apparentia
       branding:
-        preamble: Le marca de tu servitor lo differentia de altere servitores in le rete. Iste information pote esser monstrate in diverse ambientes, como le interfacie web de Mastodon, applicationes native, in previsualisationes de ligamines sur altere sitos web, in applicationes de messageria, etc. Pro iste ration, il es melior mantener iste information clar, breve e concise.
+        preamble: Le marca de tu servitor lo differentia de altere servitores in le rete. Iste information pote esser monstrate in diverse ambientes, como le interfacie web de x4ai, applicationes native, in previsualisationes de ligamines sur altere sitos web, in applicationes de messageria, etc. Pro iste ration, il es melior mantener iste information clar, breve e concise.
         title: Marca
       captcha_enabled:
         desc_html: Iste depende de scripts externe de hCaptcha, que pote esser un problema de securitate e vita private. De plus, <strong>isto pote render le processo de inscription multo minus accessibile a certe personas (particularmente personas con discapacitates)</strong>. Pro iste rationes, considera altere mesuras como le inscription basate sur approbation o invitation.
         title: Require que nove usatores solve un CAPTCHA pro confirmar lor conto
       content_retention:
         danger_zone: Zona periculose
-        preamble: Controlar como contento generate per le usator es immagazinate in Mastodon.
+        preamble: Controlar como contento generate per le usator es immagazinate in x4ai.
         title: Retention de contento
       default_noindex:
         desc_html: Affecta tote le usatores qui non ha personalmente cambiate iste parametro
         title: Excluder le usatores del indexation del motores de recerca per predefinition
       discovery:
         follow_recommendations: Recommendationes de contos a sequer
-        preamble: Presentar contento interessante es essential pro attraher e retener nove usatores qui pote non cognoscer alcun persona sur Mastodon. Controla como varie optiones de discoperta functiona sur tu servitor.
+        preamble: Presentar contento interessante es essential pro attraher e retener nove usatores qui pote non cognoscer alcun persona sur x4ai. Controla como varie optiones de discoperta functiona sur tu servitor.
         privacy: Confidentialitate
         profile_directory: Directorio de profilos
         public_timelines: Chronologias public
@@ -880,7 +880,7 @@ ia:
       destroyed_msg: Le file incargate al sito ha essite delite!
     software_updates:
       critical_update: Critic – per favor, actualisa rapidemente
-      description: Il es recommendate mantener tu installation de Mastodon actualisate pro beneficiar del ultime reparationes e functiones. In ultra, de tempore a tempore, il es de importantia critic actualisar Mastodon in tempore utile pro evitar problemas de securitate. Pro iste rationes, Mastodon verifica le presentia de actualisationes cata 30 minutas, e te notificara secundo tu preferentias de notification in e-mail.
+      description: Il es recommendate mantener tu installation de x4ai actualisate pro beneficiar del ultime reparationes e functiones. In ultra, de tempore a tempore, il es de importantia critic actualisar x4ai in tempore utile pro evitar problemas de securitate. Pro iste rationes, x4ai verifica le presentia de actualisationes cata 30 minutas, e te notificara secundo tu preferentias de notification in e-mail.
       documentation_link: Pro saper plus
       release_notes: Notas de version
       title: Actualisationes disponibile
@@ -948,7 +948,7 @@ ia:
         message_html: Le mappas de indice Elasticsearch es obsolete. Per favor exeque <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Vide documentation
-        message_html: Tu aggregation Elasticsearch ha plus que un nodo, ma Mastodon non es configurate a usar los.
+        message_html: Tu aggregation Elasticsearch ha plus que un nodo, ma x4ai non es configurate a usar los.
       elasticsearch_preset_single_node:
         action: Vide documentation
         message_html: Tu aggregation Elasticsearch ha un sol nodo, <code>ES_PRESET</code> deberea esser mittite a <code>single_node_cluster</code>.
@@ -966,13 +966,13 @@ ia:
         message_html: Necun processo Sidekiq es active pro le cauda(s) %{value}. Per favor verifica tu configuration de Sidekiq
       software_version_check:
         action: Vider le actualisationes disponibile
-        message_html: Un actualisation de Mastodon es disponibile.
+        message_html: Un actualisation de x4ai es disponibile.
       software_version_critical_check:
         action: Vider le actualisationes disponibile
-        message_html: Un actualisation critic de Mastodon es disponibile. Per favor actualisa lo le plus tosto possibile.
+        message_html: Un actualisation critic de x4ai es disponibile. Per favor actualisa lo le plus tosto possibile.
       software_version_patch_check:
         action: Vider le actualisationes disponibile
-        message_html: Un actualisation de remedio de bug pro Mastodon es disponibile.
+        message_html: Un actualisation de remedio de bug pro x4ai es disponibile.
       upload_check_privacy_error:
         action: Consulta hic pro plus information
         message_html: "<strong>Tu servitor web es mal configurate. Le confidentialitate de tu usatores es in risco.</strong>"
@@ -1132,7 +1132,7 @@ ia:
     webhooks:
       add_new: Adder puncto final
       delete: Deler
-      description_html: Un <strong>webhook</strong> o puncto de ancorage web permitte a Mastodon transmitter <strong>notificationes in tempore real</strong> sur eventos seligite a tu proprie application, de maniera que tu application pote <strong>automaticamente activar reactiones</strong>.
+      description_html: Un <strong>webhook</strong> o puncto de ancorage web permitte a x4ai transmitter <strong>notificationes in tempore real</strong> sur eventos seligite a tu proprie application, de maniera que tu application pote <strong>automaticamente activar reactiones</strong>.
       disable: Disactivar
       disabled: Disactivate
       edit: Rediger puncto final
@@ -1166,8 +1166,8 @@ ia:
       next_steps: Tu pote approbar le appello pro disfacer le decision de moderation, o ignorar lo.
       subject: "%{username} appella contra un decision de moderation sur %{instance}"
     new_critical_software_updates:
-      body: Nove versiones critic de Mastodon ha essite publicate, per favor considera actualisar le plus tosto possibile!
-      subject: Actualisationes critic de Mastodon es disponibile pro %{instance}!
+      body: Nove versiones critic de x4ai ha essite publicate, per favor considera actualisar le plus tosto possibile!
+      subject: Actualisationes critic de x4ai es disponibile pro %{instance}!
     new_pending_account:
       body: Le detalios del nove conto es infra. Tu pote approbar o refusar iste demanda.
       subject: Nove conto preste a revider sur %{instance} (%{username})
@@ -1176,8 +1176,8 @@ ia:
       body_remote: Alcuno de %{domain} ha reportate %{target}
       subject: Nove reporto pro %{instance} (#%{id})
     new_software_updates:
-      body: Nove versiones de Mastodon ha essite publicate, tu poterea voler actualisar!
-      subject: Nove versiones de Mastodon es disponibile pro %{instance}!
+      body: Nove versiones de x4ai ha essite publicate, tu poterea voler actualisar!
+      subject: Nove versiones de x4ai es disponibile pro %{instance}!
     new_trends:
       body: 'Le sequente entratas require un revision ante que illos pote esser monstrate publicamente:'
       new_trending_links:
@@ -1201,7 +1201,7 @@ ia:
     boosting_preferences_info_html: "<strong>Consilio:</strong> Independentemente del parametros, <kbd>Shift</kbd> + <kbd>clic</kbd> sur le icone %{icon} “Impulsar” impulsara immediatemente."
     discovery: Discoperta
     localization:
-      body: Mastodon es traducite per voluntarios.
+      body: x4ai es traducite per voluntarios.
       guide_link: https://crowdin.com/project/mastodon/ia
       guide_link_text: Totes pote contribuer.
     sensitive_content: Contento sensibile
@@ -1240,9 +1240,9 @@ ia:
     delete_account: Deler le conto
     delete_account_html: Si tu vole deler tu conto, tu pote <a href="%{path}">facer lo hic</a>. Te essera demandate un confirmation.
     description:
-      prefix_invited_by_user: "@%{name} te invita a junger te a iste servitor de Mastodon!"
-      prefix_sign_up: Inscribe te sur Mastodon hodie!
-      suffix: Con un conto, tu potera sequer personas, publicar tu pensatas e excambiar messages con usatores de qualcunque servitor de Mastodon e multo plus!
+      prefix_invited_by_user: "@%{name} te invita a junger te a iste servitor de x4ai!"
+      prefix_sign_up: Inscribe te sur x4ai hodie!
+      suffix: Con un conto, tu potera sequer personas, publicar tu pensatas e excambiar messages con usatores de qualcunque servitor de x4ai e multo plus!
     didnt_get_confirmation: Non recipeva tu un ligamine de confirmation?
     dont_have_your_security_key: Non ha tu le clave de securitate?
     forgot_password: Contrasigno oblidate?
@@ -1279,7 +1279,7 @@ ia:
     set_new_password: Definir un nove contrasigno
     setup:
       email_below_hint_html: Consulta tu dossier de spam, o requesta un altere ligamine de confirmation. Tu pote corriger tu adresse de e-mail si illo es errate.
-      email_settings_hint_html: Clicca sur le ligamine que nos te ha inviate a %{email} pro comenciar a usar Mastodon. Nos te attendera hic.
+      email_settings_hint_html: Clicca sur le ligamine que nos te ha inviate a %{email} pro comenciar a usar x4ai. Nos te attendera hic.
       link_not_received: Necun ligamine recipite?
       new_confirmation_instructions_sent: Tu recipera un nove e-mail con le ligamine de confirmation in poc minutas!
       title: Consulta tu cassa de entrata
@@ -1288,7 +1288,7 @@ ia:
       title: Aperir session sur %{domain}
     sign_up:
       manual_review: Le inscriptiones sur %{domain} passa per un revision manual de nostre moderatores. Pro adjutar nos a processar tu inscription, per favor scribe un poco sur te e explica proque tu vole un conto sur %{domain}.
-      preamble: Con un conto sur iste servitor de Mastodon, tu potera sequer qualcunque altere persona sur le Fediverso, independentemente de ubi su conto es albergate.
+      preamble: Con un conto sur iste servitor de x4ai, tu potera sequer qualcunque altere persona sur le Fediverso, independentemente de ubi su conto es albergate.
       title: Lassa nos installar tu conto sur %{domain}.
     status:
       account_status: Stato del conto
@@ -1304,7 +1304,7 @@ ia:
     user_privacy_agreement_html: Io ha legite e io accepta le <a href="%{privacy_policy_path}" target="_blank">politica de confidentialitate</a>
   author_attribution:
     example_title: Texto de exemplo
-    hint_html: Scribe tu articulos de novas o de blog foras de Mastodon? Controla le maniera in que tu recipe attribution quando on los condivide sur Mastodon.
+    hint_html: Scribe tu articulos de novas o de blog foras de x4ai? Controla le maniera in que tu recipe attribution quando on los condivide sur x4ai.
     instructions: 'Assecura te que iste codice appare in le HTML de tu articulo:'
     more_from_html: Plus de %{name}
     s_blog: Blog de %{name}
@@ -1405,7 +1405,7 @@ ia:
       content: Nos lo regretta, ma qualcosa non ha functionate de nostre latere.
       title: Iste pagina non es correcte
     '503': Le pagina non poteva esser servite a causa de un panna temporari del servitor.
-    noscript_html: Pro usar le application web Mastodon, es necessari activar JavaScript. Tu pote tamben probar un del <a href="%{apps_path}">apps native</a> de Mastodon pro tu platteforma.
+    noscript_html: Pro usar le application web x4ai, es necessari activar JavaScript. Tu pote tamben probar un del <a href="%{apps_path}">apps native</a> de x4ai pro tu platteforma.
   existing_username_validator:
     not_found: impossibile trovar un usator local con ille nomine de usator
     not_found_multiple: non poteva trovar %{usernames}
@@ -1625,7 +1625,7 @@ ia:
     unsubscribe:
       action: Si, cancellar subscription
       complete: Desubscribite
-      confirmation_html: Es tu secur de voler cancellar le subscription al %{type} de Mastodon sur %{domain} pro tu adresse de e-mail %{email}? Tu pote sempre resubscriber te a partir del <a href="%{settings_path}">parametros de notification in e-mail</a>.
+      confirmation_html: Es tu secur de voler cancellar le subscription al %{type} de x4ai sur %{domain} pro tu adresse de e-mail %{email}? Tu pote sempre resubscriber te a partir del <a href="%{settings_path}">parametros de notification in e-mail</a>.
       emails:
         notification_emails:
           favourite: notificationes de favorites in e-mail
@@ -1634,7 +1634,7 @@ ia:
           mention: notificationes de mentiones in e-mail
           reblog: notificationes de impulsos in e-mail
       resubscribe_html: Si tu ha cancellate le subscription in error, tu pote resubscriber te a partir del <a href="%{settings_path}">parametros de notification in e-mail</a>.
-      success_html: Tu non recipera plus %{type} pro Mastodon sur %{domain} a tu adresse de e-mail %{email}.
+      success_html: Tu non recipera plus %{type} pro x4ai sur %{domain} a tu adresse de e-mail %{email}.
       title: Desubcriber
   media_attachments:
     validations:
@@ -1766,13 +1766,13 @@ ia:
     posting_defaults: Parametros de publication predefinite
     public_timelines: Chronologias public
   privacy:
-    hint_html: "<strong>Personalisa como tu vole que le gente trova tu profilo e tu messages.</strong> Un varietate de functiones in Mastodon pote adjutar te a attinger un plus grande publico si tu los activa. Prende un momento pro revider iste parametros pro assecurar te que illos se adapta a tu besonios."
+    hint_html: "<strong>Personalisa como tu vole que le gente trova tu profilo e tu messages.</strong> Un varietate de functiones in x4ai pote adjutar te a attinger un plus grande publico si tu los activa. Prende un momento pro revider iste parametros pro assecurar te que illos se adapta a tu besonios."
     privacy: Confidentialitate
     privacy_hint_html: Controla quanto tu vole divulgar pro le beneficio de alteres. Le gente discoperi profilos e applicationes interessante percurrente le profilos sequite per altere personas e vidente a partir de qual applicationes illos publica lor messages, ma tu pote preferer de mantener tal information private.
     reach: Portata
     reach_hint_html: Controla si tu vole esser discoperite e sequite per nove personas. Vole tu que tu messages appare sur le schermo Explorar? Vole tu que altere personas te vide in lor recommendationes de sequimento? Vole tu acceptar automaticamente tote le nove sequitores o prefere tu haber le controlo granular super cata un?
     search: Cercar
-    search_hint_html: Controla como tu vole esser trovate. Vole tu que le gente te trova per medio del contento de tu messages public? Vole tu que personas foras de Mastodon trova tu profilo quando illes cerca in le web? Nota ben que non es possibile garantir le exclusion total de tu information public del motores de recerca.
+    search_hint_html: Controla como tu vole esser trovate. Vole tu que le gente te trova per medio del contento de tu messages public? Vole tu que personas foras de x4ai trova tu profilo quando illes cerca in le web? Nota ben que non es possibile garantir le exclusion total de tu information public del motores de recerca.
     title: Confidentialitate e portata
   privacy_policy:
     title: Politica de confidentialitate
@@ -1847,7 +1847,7 @@ ia:
     current_session: Session actual
     date: Data
     description: "%{browser} sur %{platform}"
-    explanation: Istes es le navigatores web actualmente in session sur tu conto Mastodon.
+    explanation: Istes es le navigatores web actualmente in session sur tu conto x4ai.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1873,7 +1873,7 @@ ia:
     aliases: Aliases de conto
     appearance: Apparentia
     authorized_apps: Apps autorisate
-    back: Retornar a Mastodon
+    back: Retornar a x4ai
     delete: Deletion de conto
     development: Disveloppamento
     edit_profile: Modificar profilo
@@ -1947,9 +1947,9 @@ ia:
       direct: Mention private
       private: Solmente sequitores
       public: Public
-      public_long: Quicunque, sur Mastodon o non
+      public_long: Quicunque, sur x4ai o non
       unlisted: Public ma quiete
-      unlisted_long: Celate in resultatos de recerca, tendentias e chronologias public de Mastodon
+      unlisted_long: Celate in resultatos de recerca, tendentias e chronologias public de x4ai
   statuses_cleanup:
     enabled: Deler automaticamente le messages ancian
     enabled_hint: Dele automaticamente tu messages un vice que illos attinge un limine de etate specificate, salvo que illes concorda un del exceptiones infra
@@ -1998,9 +1998,9 @@ ia:
     review_link: Revider le conditiones de servicio
     title: Le conditiones de servicio de %{domain} cambia
   themes:
-    contrast: Mastodon (Alte contrasto)
-    default: Mastodon (Obscur)
-    mastodon-light: Mastodon (Clar)
+    contrast: x4ai (Alte contrasto)
+    default: x4ai (Obscur)
+    mastodon-light: x4ai (Clar)
     system: Automatic (usar thema del systema)
   time:
     formats:
@@ -2044,7 +2044,7 @@ ia:
       subtitle: Tu appello ha essite rejectate.
       title: Appello rejectate
     backup_ready:
-      explanation: Tu ha requestate un copia de securitate complete de tu conto de Mastodon.
+      explanation: Tu ha requestate un copia de securitate complete de tu conto de x4ai.
       extra: Illo es ora preste pro discargar!
       subject: Tu archivo es preste pro discargar
       title: Discargar archivo
@@ -2105,7 +2105,7 @@ ia:
       apps_android_action: Obtener lo sur Google Play
       apps_ios_action: Discargar sur le App Store
       apps_step: Discarga nostre applicationes official.
-      apps_title: Applicationes de Mastodon
+      apps_title: Applicationes de x4ai
       checklist_subtitle: 'Comencia tu aventura sur le web social:'
       checklist_title: Prime passos
       edit_profile_action: Personalisar
@@ -2113,16 +2113,16 @@ ia:
       edit_profile_title: Personalisar tu profilo
       explanation: Ecce alcun consilios pro initiar
       feature_action: Apprender plus
-      feature_audience: Mastodon te presenta le possibilitate unic de gerer tu audientia sin intermediarios. Mastodon, installate sur tu proprie infrastructura, te permitte sequer, e esser sequite per, personas sur qualcunque altere servitor Mastodon in linea, e necuno lo controla salvo tu.
+      feature_audience: x4ai te presenta le possibilitate unic de gerer tu audientia sin intermediarios. x4ai, installate sur tu proprie infrastructura, te permitte sequer, e esser sequite per, personas sur qualcunque altere servitor x4ai in linea, e necuno lo controla salvo tu.
       feature_audience_title: Crea tu audientia in confidentia
-      feature_control: Tu sape melio lo que tu vole vider sur tu fluxo de initio. Nulle algorithmos o annuncios dissipa tu tempore. Seque quicinque sur qualcunque servitor Mastodon desde un sol conto, recipe lor messages in ordine chronologic, e face te un angulo del internet ubi tu te senti a casa.
+      feature_control: Tu sape melio lo que tu vole vider sur tu fluxo de initio. Nulle algorithmos o annuncios dissipa tu tempore. Seque quicinque sur qualcunque servitor x4ai desde un sol conto, recipe lor messages in ordine chronologic, e face te un angulo del internet ubi tu te senti a casa.
       feature_control_title: Mantene le controlo de tu proprie chronologia
-      feature_creativity: Mastodon supporta messages con audio, video e imagines, descriptiones de accessibilitate, sondages, advertimentos de contento, avatares con animation, emojis personalisate, controlo de retalio de miniaturas, e plus, pro adjutar te a exprimer te in linea. Que tu publica tu arte, tu musica o tu podcast, Mastodon existe pro te.
+      feature_creativity: x4ai supporta messages con audio, video e imagines, descriptiones de accessibilitate, sondages, advertimentos de contento, avatares con animation, emojis personalisate, controlo de retalio de miniaturas, e plus, pro adjutar te a exprimer te in linea. Que tu publica tu arte, tu musica o tu podcast, x4ai existe pro te.
       feature_creativity_title: Creativitate sin parallel
-      feature_moderation: Mastodon remitte le controlo in tu manos. Cata servitor crea su proprie regulas e directivas, applicate localmente e non de maniera vertical como le medios social corporative, rendente lo flexibile in responder al necessitates de differente gruppos de personas. Adhere a un servitor con regulas que te place, o alberga le tue.
+      feature_moderation: x4ai remitte le controlo in tu manos. Cata servitor crea su proprie regulas e directivas, applicate localmente e non de maniera vertical como le medios social corporative, rendente lo flexibile in responder al necessitates de differente gruppos de personas. Adhere a un servitor con regulas que te place, o alberga le tue.
       feature_moderation_title: Moderation como deberea esser
       follow_action: Sequer
-      follow_step: Sequer personas interessante es le ration de esser de Mastodon.
+      follow_step: Sequer personas interessante es le ration de esser de x4ai.
       follow_title: Personalisa tu fluxo principal
       follows_subtitle: Seque contos popular
       follows_title: Qui sequer
@@ -2136,10 +2136,10 @@ ia:
       post_action: Scriber
       post_step: Saluta le mundo con texto, photos, videos o sondages.
       post_title: Face tu prime message
-      share_step: Face saper a tu amicos como trovar te sur Mastodon.
-      share_title: Compartir tu profilo de Mastodon
+      share_step: Face saper a tu amicos como trovar te sur x4ai.
+      share_title: Compartir tu profilo de x4ai
       sign_in_action: Initiar session
-      subject: Benvenite in Mastodon
+      subject: Benvenite in x4ai
       title: Benvenite a bordo, %{name}!
   users:
     follow_limit_reached: Tu non pote sequer plus de %{limit} personas
@@ -2152,7 +2152,7 @@ ia:
   verification:
     extra_instructions_html: <strong>Consilio:</strong> Le ligamine sur tu sito web pote esser invisibile. Le parte importante es <code>rel="me"</code> que impedi le usurpation de identitate sur sitos web con contento generate per usatores. Tu pote mesmo usar un etiquetta <code>link</code> in le capite del pagina in vice de <code>a</code>, ma le codice HTML debe esser accessibile sin executar JavaScript.
     here_is_how: Ecce como
-    hint_html: "<strong>Omnes pote verificar lor identitate sur Mastodon.</strong> Isto es basate sur standards web aperte e es gratuite, ora e pro sempre. Tote lo que es necessari es un sito web personal que le gente recognosce como le tue. Quando tu liga a iste sito web desde tu profilo, le systema verificara que le sito web liga retro a tu profilo e monstrara un indicator visual de iste facto."
+    hint_html: "<strong>Omnes pote verificar lor identitate sur x4ai.</strong> Isto es basate sur standards web aperte e es gratuite, ora e pro sempre. Tote lo que es necessari es un sito web personal que le gente recognosce como le tue. Quando tu liga a iste sito web desde tu profilo, le systema verificara que le sito web liga retro a tu profilo e monstrara un indicator visual de iste facto."
     instructions_html: Copia e colla le codice hic infra in le HTML de tu sito web. Alora adde le adresse de tu sito web in un del campos supplementari sur tu profilo desde le scheda “Modificar profilo” e salva le cambiamentos.
     verification: Verification
     verified_links: Tu ligamines verificate

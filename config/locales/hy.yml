@@ -787,9 +787,9 @@ hy:
   stream_entries:
     sensitive_content: Կասկածելի բովանդակութիւն
   themes:
-    contrast: Mastodon (բարձր կոնտրաստով)
-    default: Mastodon (Մուգ)
-    mastodon-light: Mastodon (Լուսավոր)
+    contrast: x4ai (բարձր կոնտրաստով)
+    default: x4ai (Մուգ)
+    mastodon-light: x4ai (Լուսավոր)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

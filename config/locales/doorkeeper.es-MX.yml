@@ -123,7 +123,7 @@ es-MX:
         admin/accounts: Administración de cuentas
         admin/all: Todas las funciones administrativas
         admin/reports: Administración de reportes
-        all: Acceso completo a tu cuenta de Mastodon
+        all: Acceso completo a tu cuenta de x4ai
         blocks: Bloques
         bookmarks: Marcadores
         conversations: Conversaciones
@@ -136,7 +136,7 @@ es-MX:
         media: Archivos adjuntos
         mutes: Silenciados
         notifications: Notificaciones
-        profile: Tu perfil de Mastodon
+        profile: Tu perfil de x4ai
         push: Notificaciones push
         reports: Reportes
         search: Busqueda

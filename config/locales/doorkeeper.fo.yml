@@ -123,7 +123,7 @@ fo:
         admin/accounts: Umsiting av kontum
         admin/all: Allar umsitingarligar funktiónir
         admin/reports: Umsiting av meldingum
-        all: Full atgongd til tína Mastodon kontu
+        all: Full atgongd til tína x4ai kontu
         blocks: Blokeringar
         bookmarks: Bókamerki
         conversations: Samrøður
@@ -136,7 +136,7 @@ fo:
         media: Viðfestir miðlar
         mutes: Doyvir
         notifications: Fráboðanir
-        profile: Tín Mastodon vangi
+        profile: Tín x4ai vangi
         push: Skumpifráboðanir
         reports: Meldingar
         search: Leita

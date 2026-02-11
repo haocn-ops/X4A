@@ -1,10 +1,10 @@
 ---
 id:
   about:
-    about_mastodon_html: 'Jaringan sosial masa depan: Tanpa iklan, tanpa pemantauan perusahaan, desain etis, dan terdesentralisasi! Miliki data Anda dengan Mastodon!'
+    about_mastodon_html: 'Jaringan sosial masa depan: Tanpa iklan, tanpa pemantauan perusahaan, desain etis, dan terdesentralisasi! Miliki data Anda dengan x4ai!'
     contact_missing: Belum ditetapkan
     contact_unavailable: Tidak Tersedia
-    hosted_on: Mastodon dihosting di %{domain}
+    hosted_on: x4ai dihosting di %{domain}
     title: Tentang
   accounts:
     followers:
@@ -596,7 +596,7 @@ id:
         moderation: Moderasi
         special: Khusus
       delete: Hapus
-      description_html: Dengan <strong>peran pengguna</strong>, Anda dapat mengubah fungsi dan area Mastodon apa pengguna Anda dapat mengakses.
+      description_html: Dengan <strong>peran pengguna</strong>, Anda dapat mengubah fungsi dan area x4ai apa pengguna Anda dapat mengakses.
       edit: ערכי את התפקיד של '%{name}'
       everyone: Izin bawaan
       everyone_full_description_html: Ini adalah <strong>peran dasaran</strong> yang memengaruhi <strong>semua pengguna</strong>, bahkan tanpa yang memiliki sebuah peran yang diberikan. Semua peran lainnya mendapatkan izin dari ini.
@@ -656,13 +656,13 @@ id:
         rules_hint: Ada area yang khusus untuk peraturan yang pengguna Anda seharusnya tahu.
         title: Tentang
       appearance:
-        preamble: Ubah antarmuka web Mastodon.
+        preamble: Ubah antarmuka web x4ai.
         title: Tampilan
       branding:
-        preamble: Merek server Anda membedakannya dari server lain dalam jaringan. Informasi ini dapat ditampilkan dalam berbagai lingkungan, seperti antarmuka web Mastodon, aplikasi asli, dalam tampilan tautan di situs web lain dan dalam aplikasi perpesanan, dan lain-lain. Untuk alasan ini, buat informasi ini jelas, pendek, dan tidak bertele-tele.
+        preamble: Merek server Anda membedakannya dari server lain dalam jaringan. Informasi ini dapat ditampilkan dalam berbagai lingkungan, seperti antarmuka web x4ai, aplikasi asli, dalam tampilan tautan di situs web lain dan dalam aplikasi perpesanan, dan lain-lain. Untuk alasan ini, buat informasi ini jelas, pendek, dan tidak bertele-tele.
         title: Merek
       content_retention:
-        preamble: Atur bagaimana konten yang dibuat oleh pengguna disimpan di Mastodon.
+        preamble: Atur bagaimana konten yang dibuat oleh pengguna disimpan di x4ai.
         title: Retensi konten
       default_noindex:
         desc_html: Memengaruhi semua pengguna yang belum mengubah pengaturan ini sendiri
@@ -807,7 +807,7 @@ id:
     webhooks:
       add_new: Tambah titik akhir
       delete: Hapus
-      description_html: Sebuah <strong>webhook</strong> memungkinkan Mastodon untuk mengirim <strong>notifikasi dalam waktu nyata</strong> tentang peristiwa yang dipilih ke aplikasi Anda sendiri, sehingga aplikasi Anda dapat <strong>memicu reaksi secara otomatis</strong>.
+      description_html: Sebuah <strong>webhook</strong> memungkinkan x4ai untuk mengirim <strong>notifikasi dalam waktu nyata</strong> tentang peristiwa yang dipilih ke aplikasi Anda sendiri, sehingga aplikasi Anda dapat <strong>memicu reaksi secara otomatis</strong>.
       disable: Matikan
       disabled: Nonaktif
       edit: Edit titik akhir
@@ -863,7 +863,7 @@ id:
     animations_and_accessibility: Animasi dan aksesibilitas
     discovery: Jelajah
     localization:
-      body: Mastodon diterjemahkan oleh sukarelawan.
+      body: x4ai diterjemahkan oleh sukarelawan.
       guide_link: https://crowdin.com/project/mastodon
       guide_link_text: Siapa saja bisa berkontribusi.
     sensitive_content: Konten sensitif
@@ -884,9 +884,9 @@ id:
     delete_account: Hapus akun
     delete_account_html: Jika Anda ingin menghapus akun Anda, Anda dapat <a href="%{path}">memproses ini</a>. Anda akan dikonfirmasi.
     description:
-      prefix_invited_by_user: "@%{name} mengundang Anda untuk bergabung di server Mastodon ini!"
-      prefix_sign_up: Daftar ke Mastodon hari ini!
-      suffix: Dengan sebuah akun, Anda dapat mengikuti orang, mengirim pembaruan, dan bertukar pesan dengan pengguna dari server Mastodon mana pun dan lainnya!
+      prefix_invited_by_user: "@%{name} mengundang Anda untuk bergabung di server x4ai ini!"
+      prefix_sign_up: Daftar ke x4ai hari ini!
+      suffix: Dengan sebuah akun, Anda dapat mengikuti orang, mengirim pembaruan, dan bertukar pesan dengan pengguna dari server x4ai mana pun dan lainnya!
     dont_have_your_security_key: Tidak memiliki kunci keamanan?
     forgot_password: Lupa kata sandi?
     invalid_reset_password_token: Token reset kata sandi tidak valid atau kedaluwarsa. Silakan minta yang baru.
@@ -1004,7 +1004,7 @@ id:
       content: Maaf, ada sesuatu yang salah pada sistem kami.
       title: Halaman ini tidak benar
     '503': Halaman ini tidak dapat ditampilkan karena kegagalan server sementara.
-    noscript_html: Untuk menggunakan aplikasi web Mastodon, tolong aktifkan JavaScript. Sebagai alternatif, cobalah <a href="%{apps_path}">aplikasi murni</a> Mastodon untuk platform Anda.
+    noscript_html: Untuk menggunakan aplikasi web x4ai, tolong aktifkan JavaScript. Sebagai alternatif, cobalah <a href="%{apps_path}">aplikasi murni</a> x4ai untuk platform Anda.
   existing_username_validator:
     not_found: tidak dapat menemukan pengguna lokal dengan nama pengguna tersebut
     not_found_multiple: tidak dapat menemukan %{usernames}
@@ -1309,7 +1309,7 @@ id:
       weibo: Weibo
     current_session: Sesi sekarang
     description: "%{browser} di %{platform}"
-    explanation: Ini peramban yang sedang dalam posisi masuk akun Mastodon Anda.
+    explanation: Ini peramban yang sedang dalam posisi masuk akun x4ai Anda.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1333,7 +1333,7 @@ id:
     aliases: Alias akun
     appearance: Tampilan
     authorized_apps: Apl yang diizinkan
-    back: Kembali ke Mastodon
+    back: Kembali ke x4ai
     delete: Penghapusan akun
     development: Pengembangan
     edit_profile: Ubah profil
@@ -1414,9 +1414,9 @@ id:
   tags:
     does_not_match_previous_name: tidak cocok dengan nama sebelumnya
   themes:
-    contrast: Mastodon (Kontras tinggi)
-    default: Mastodon (Gelap)
-    mastodon-light: Mastodon (Terang)
+    contrast: x4ai (Kontras tinggi)
+    default: x4ai (Gelap)
+    mastodon-light: x4ai (Terang)
   time:
     formats:
       default: "%d %b %Y, %H:%M"
@@ -1489,7 +1489,7 @@ id:
         suspend: Akun ditangguhkan
     welcome:
       explanation: Beberapa tips sebelum Anda memulai
-      subject: Selamat datang di Mastodon
+      subject: Selamat datang di x4ai
       title: Selamat datang, %{name}!
   users:
     follow_limit_reached: Anda tidak dapat mengikuti lebih dari %{limit} orang

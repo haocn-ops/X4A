@@ -123,7 +123,7 @@ fy:
         admin/accounts: Accountbehear
         admin/all: Alle behearfunksjes
         admin/reports: Rapportaazjebehear
-        all: Folsleine tagong ta jo Mastodon-account
+        all: Folsleine tagong ta jo x4ai-account
         blocks: Blokkearje
         bookmarks: Blêdwizers
         conversations: Petearen
@@ -136,7 +136,7 @@ fy:
         media: Mediabylagen
         mutes: Negearre
         notifications: Meldingen
-        profile: Jo Mastodon-profyl
+        profile: Jo x4ai-profyl
         push: Pushmeldingen
         reports: Rapportaazjes
         search: Sykje

@@ -123,7 +123,7 @@ sl:
         admin/accounts: Upravljanje računov
         admin/all: Vse skrbniške funkcije
         admin/reports: Upravljanje prijav
-        all: Poln dostop do vašega računa Mastodon
+        all: Poln dostop do vašega računa x4ai
         blocks: Blokira
         bookmarks: Zaznamki
         conversations: Pogovori
@@ -136,7 +136,7 @@ sl:
         media: Predstavnostne priloge
         mutes: Utišani
         notifications: Obvestila
-        profile: Vaš profil Mastodon
+        profile: Vaš profil x4ai
         push: Potisna obvestila
         reports: Prijave
         search: Iskanje

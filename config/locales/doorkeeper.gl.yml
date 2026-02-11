@@ -123,7 +123,7 @@ gl:
         admin/accounts: Administración das contas
         admin/all: Todas as funcións administrativas
         admin/reports: Administración das denuncias
-        all: Acceso completo á túa conta de Mastodon
+        all: Acceso completo á túa conta de x4ai
         blocks: Bloqueos
         bookmarks: Marcadores
         conversations: Conversas
@@ -136,7 +136,7 @@ gl:
         media: Anexos multimedia
         mutes: Acaladas
         notifications: Notificacións
-        profile: O teu perfil en Mastodon
+        profile: O teu perfil en x4ai
         push: Notificacións Push
         reports: Denuncias
         search: Busca

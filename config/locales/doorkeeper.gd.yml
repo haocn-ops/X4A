@@ -123,7 +123,7 @@ gd:
         admin/accounts: Rianachd nan cunntas
         admin/all: Gach gleus na rianachd
         admin/reports: Rianachd nan gearan
-        all: Làn-inntrigeadh dhan chunntas Mastodon agad
+        all: Làn-inntrigeadh dhan chunntas x4ai agad
         blocks: Bacaidhean
         bookmarks: Comharran-lìn
         conversations: Còmhraidhean
@@ -136,7 +136,7 @@ gd:
         media: Ceanglachain mheadhanan
         mutes: Mùchaidhean
         notifications: Brathan
-        profile: A’ phròifil Mastodon agad
+        profile: A’ phròifil x4ai agad
         push: Brathan putaidh
         reports: Gearanan
         search: Lorg

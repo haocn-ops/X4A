@@ -74,7 +74,7 @@ export const LinkFooter: React.FC<{
       </p>
 
       <p>
-        <strong>Mastodon</strong>:{' '}
+        <strong>x4ai</strong>:{' '}
         <a href='https://joinmastodon.org' target='_blank' rel='noopener'>
           <FormattedMessage id='footer.about' defaultMessage='About' />
         </a>

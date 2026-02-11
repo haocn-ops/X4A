@@ -90,7 +90,7 @@ import '../../components/status';
 import { areCollectionsEnabled } from '../collections/utils';
 
 const messages = defineMessages({
-  beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave Mastodon.' },
+  beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave x4ai.' },
 });
 
 const mapStateToProps = state => ({

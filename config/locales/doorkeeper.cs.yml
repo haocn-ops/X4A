@@ -123,7 +123,7 @@ cs:
         admin/accounts: Správa účtů
         admin/all: Všechny správcovské funkce
         admin/reports: Správa hlášení
-        all: Plný přístup k vašemu Mastodon účtu
+        all: Plný přístup k vašemu x4ai účtu
         blocks: Blokace
         bookmarks: Záložky
         conversations: Konverzace
@@ -136,7 +136,7 @@ cs:
         media: Mediální přílohy
         mutes: Skrytí
         notifications: Oznámení
-        profile: Váš Mastodon profil
+        profile: Váš x4ai profil
         push: Push oznámení
         reports: Hlášení
         search: Hledání

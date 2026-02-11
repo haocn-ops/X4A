@@ -11,6 +11,8 @@
     - if storage_host?
       %link{ rel: 'dns-prefetch', href: storage_host }/
 
+    %link{ rel: 'icon', href: frontend_asset_path('images/logo-symbol-icon.svg'), type: 'image/svg+xml' }/
+
     - SiteUpload::FAVICON_SIZES.each do |size|
       %link{ rel: 'icon', sizes: "#{size}x#{size}", href: favicon_path(size.to_i) || frontend_asset_path("icons/favicon-#{size}x#{size}.png"), type: 'image/png' }/
 
@@ -20,6 +22,8 @@
     - if use_mask_icon?
       %link{ rel: 'mask-icon', href: frontend_asset_path('images/logo-symbol-icon.svg'), color: '#6364FF' }/
     %link{ rel: 'manifest', href: manifest_path(format: :json) }/
+    %link{ rel: 'alternate', type: 'application/json', title: 'AI Agent Policy', href: '/.well-known/ai-agent.json' }/
+    %link{ rel: 'alternate', type: 'text/plain', title: 'AI Agent Policy (text)', href: '/ai.txt' }/
     = javascript_inline_tag 'theme-selection.js'
     = theme_color_tags color_scheme
     %meta{ name: 'mobile-web-app-capable', content: 'yes' }/
