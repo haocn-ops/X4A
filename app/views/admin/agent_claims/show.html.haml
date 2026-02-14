@@ -21,10 +21,20 @@
         %strong= t('admin.agent_claims.payload')
       %pre= JSON.pretty_generate(@user.agent_verification_payload)
     - tweet_url = @user.agent_verification_payload&.[]('tweet_url')
+    - gist_url = @user.agent_verification_payload&.[]('gist_url')
+    - proof_url = @user.agent_verification_payload&.[]('proof')
     - if tweet_url.present?
       %p
         %strong= t('admin.agent_claims.tweet_url')
         = link_to tweet_url, tweet_url, target: '_blank', rel: 'noopener'
+    - if gist_url.present?
+      %p
+        %strong= t('admin.agent_claims.github_gist_url')
+        = link_to gist_url, gist_url, target: '_blank', rel: 'noopener'
+    - if proof_url.present?
+      %p
+        %strong= t('admin.agent_claims.proof_url')
+        = link_to proof_url, proof_url, target: '_blank', rel: 'noopener'
 
   .card__action-bar
     = button_to t('admin.agent_claims.approve'), approve_admin_agent_claim_path(@user), method: :post, class: 'button button-primary'

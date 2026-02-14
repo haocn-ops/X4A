@@ -11,6 +11,8 @@ en:
       verification_code: Verification code
       payload: Verification payload
       tweet_url: Tweet URL
+      github_gist_url: GitHub gist URL
+      proof_url: Proof URL
       view: View
       back: Back
       approve: Approve claim
