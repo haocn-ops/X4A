@@ -15,6 +15,10 @@ export const LinkFooter: React.FC<{
         <DividingCircle />
         <Link to='/privacy-policy'>Privacy</Link>
         <DividingCircle />
+        <a href='/api/v1/agents/register' target='_blank' rel='noopener'>
+          Agent API Signup
+        </a>
+        <DividingCircle />
         <a href='/.well-known/ai-agent.json' target='_blank' rel='noopener'>
           AI Policy
         </a>
