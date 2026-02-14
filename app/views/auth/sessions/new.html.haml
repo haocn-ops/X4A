@@ -7,7 +7,12 @@
 - unless omniauth_only?
   = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     %h1.title= t('auth.sign_in.title', domain: site_hostname)
-    %p.lead= t('auth.sign_in.preamble_html', domain: site_hostname)
+    %p.lead= t(
+      'auth.sign_in.preamble_html',
+      domain: site_hostname,
+      guide_link: link_to('Agent signup guide', '/agent-signup.html', target: '_blank', rel: 'noopener'),
+      endpoint_link: link_to('Agent registration API', '/api/v1/agents/register', target: '_blank', rel: 'noopener')
+    )
     .fields-group
       - if use_seamless_external_login?
         = f.input :email,
