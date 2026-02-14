@@ -534,7 +534,7 @@ class User < ApplicationRecord
   end
 
   def validate_email_dns?
-    email_changed? && !external? && !self.class.skip_mx_check?
+    email_changed? && !external? && !bypass_registration_checks? && !self.class.skip_mx_check?
   end
 
   def validate_role_elevation
