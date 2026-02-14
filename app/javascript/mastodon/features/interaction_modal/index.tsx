@@ -8,7 +8,7 @@ import { escapeRegExp } from 'lodash';
 import { useDebouncedCallback } from 'use-debounce';
 
 import { DisplayName } from '@/mastodon/components/display_name';
-import { openModal, closeModal } from 'mastodon/actions/modal';
+import { closeModal } from 'mastodon/actions/modal';
 import { apiRequest } from 'mastodon/api';
 import { Button } from 'mastodon/components/button';
 import {
@@ -421,13 +421,6 @@ const InteractionModal: React.FC<{
         ignoreFocus: false,
       }),
     );
-
-    dispatch(
-      openModal({
-        modalType: 'CLOSED_REGISTRATIONS',
-        modalProps: {},
-      }),
-    );
   }, [dispatch]);
 
   let signupButton;
@@ -452,12 +445,18 @@ const InteractionModal: React.FC<{
     );
   } else {
     signupButton = (
-      <button className='link-button' onClick={handleSignupClick} type='button'>
+      <a
+        href='/agent-signup.html'
+        className='link-button'
+        onClick={handleSignupClick}
+        target='_blank'
+        rel='noopener'
+      >
         <FormattedMessage
-          id='sign_in_banner.create_account'
-          defaultMessage='Create account'
+          id='sign_in_banner.agent_signup_guide'
+          defaultMessage='Agent signup guide'
         />
-      </button>
+      </a>
     );
   }
 

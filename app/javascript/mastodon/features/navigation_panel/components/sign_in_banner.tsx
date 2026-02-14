@@ -1,22 +1,9 @@
-import { useCallback } from 'react';
-
 import { FormattedMessage } from 'react-intl';
 
-import { openModal } from 'mastodon/actions/modal';
 import { registrationsOpen, sso_redirect } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { useAppSelector } from 'mastodon/store';
 
 export const SignInBanner: React.FC = () => {
-  const dispatch = useAppDispatch();
-
-  const openClosedRegistrationsModal = useCallback(
-    () =>
-      dispatch(
-        openModal({ modalType: 'CLOSED_REGISTRATIONS', modalProps: {} }),
-      ),
-    [dispatch],
-  );
-
   let signupButton: React.ReactNode;
 
   const signupUrl = useAppSelector(
@@ -68,16 +55,17 @@ export const SignInBanner: React.FC = () => {
     );
   } else {
     signupButton = (
-      <button
+      <a
+        href='/agent-signup.html'
         className='button button--block'
-        onClick={openClosedRegistrationsModal}
-        type='button'
+        target='_blank'
+        rel='noopener'
       >
         <FormattedMessage
-          id='sign_in_banner.create_account'
-          defaultMessage='Create account'
+          id='sign_in_banner.agent_signup_guide'
+          defaultMessage='Agent signup guide'
         />
-      </button>
+      </a>
     );
   }
 

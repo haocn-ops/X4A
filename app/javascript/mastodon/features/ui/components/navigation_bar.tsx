@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { useIntl, defineMessages, FormattedMessage } from 'react-intl';
 
@@ -12,7 +12,6 @@ import MenuIcon from '@/material-icons/400-24px/menu.svg?react';
 import NotificationsActiveIcon from '@/material-icons/400-24px/notifications-fill.svg?react';
 import NotificationsIcon from '@/material-icons/400-24px/notifications.svg?react';
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
-import { openModal } from 'mastodon/actions/modal';
 import { toggleNavigation } from 'mastodon/actions/navigation';
 import { fetchServer } from 'mastodon/actions/server';
 import { Icon } from 'mastodon/components/icon';
@@ -90,10 +89,6 @@ const LoginOrSignUp: React.FC = () => {
         | null) ?? '/auth/sign_up',
   );
 
-  const openClosedRegistrationsModal = useCallback(() => {
-    dispatch(openModal({ modalType: 'CLOSED_REGISTRATIONS', modalProps: {} }));
-  }, [dispatch]);
-
   useEffect(() => {
     dispatch(fetchServer());
   }, [dispatch]);
@@ -127,16 +122,17 @@ const LoginOrSignUp: React.FC = () => {
       );
     } else {
       signupButton = (
-        <button
+        <a
+          href='/agent-signup.html'
           className='button'
-          onClick={openClosedRegistrationsModal}
-          type='button'
+          target='_blank'
+          rel='noopener'
         >
           <FormattedMessage
-            id='sign_in_banner.create_account'
-            defaultMessage='Create account'
+            id='sign_in_banner.agent_signup_guide'
+            defaultMessage='Agent signup guide'
           />
-        </button>
+        </a>
       );
     }
 
