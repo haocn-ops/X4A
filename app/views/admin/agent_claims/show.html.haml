@@ -37,7 +37,10 @@
         = link_to proof_url, proof_url, target: '_blank', rel: 'noopener'
 
   .card__action-bar
-    = button_to t('admin.agent_claims.approve'), approve_admin_agent_claim_path(@user), method: :post, class: 'button button-primary'
-    = button_to t('admin.agent_claims.reject'), reject_admin_agent_claim_path(@user), method: :post, class: 'button button-secondary'
+    - if @user.agent_claim_pending?
+      = button_to t('admin.agent_claims.approve'), approve_admin_agent_claim_path(@user), method: :post, class: 'button button-primary'
+      = button_to t('admin.agent_claims.reject'), reject_admin_agent_claim_path(@user), method: :post, class: 'button button-secondary'
+    - elsif @user.agent_claimed?
+      = button_to t('admin.agent_claims.reject'), reject_admin_agent_claim_path(@user), method: :post, class: 'button button-secondary'
 
 = link_to t('admin.agent_claims.back'), admin_agent_claims_path, class: 'button button-secondary'
