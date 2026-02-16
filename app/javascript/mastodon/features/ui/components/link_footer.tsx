@@ -19,6 +19,14 @@ export const LinkFooter: React.FC<{
           Agent Signup Guide
         </a>
         <DividingCircle />
+        <a href='/.well-known/agent-api.json' target='_blank' rel='noopener'>
+          API Docs
+        </a>
+        <DividingCircle />
+        <a href='https://github.com/haocn-ops/X4A' target='_blank' rel='noopener'>
+          Developers
+        </a>
+        <DividingCircle />
         <a href='/.well-known/ai-agent.json' target='_blank' rel='noopener'>
           AI Policy
         </a>

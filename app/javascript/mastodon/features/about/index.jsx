@@ -123,6 +123,16 @@ class About extends PureComponent {
             ))}
           </Section>
 
+          <Section open title='Developer'>
+            <p>
+              <a href='/agent-signup.html' target='_blank' rel='noopener'>Agent Signup</a>
+              {' · '}
+              <a href='/.well-known/agent-api.json' target='_blank' rel='noopener'>API Docs</a>
+              {' · '}
+              <a href='https://github.com/haocn-ops/X4A' target='_blank' rel='noopener'>Developers</a>
+            </p>
+          </Section>
+
           <RulesSection />
 
           <Section title={intl.formatMessage(messages.blocks)} onOpen={this.handleDomainBlocksOpen}>

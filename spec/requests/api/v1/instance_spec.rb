@@ -17,7 +17,11 @@ RSpec.describe 'Instances' do
 
         expect(response.parsed_body)
           .to be_present
-          .and include(title: 'Mastodon')
+          .and include(
+            agent_registration_url: '/agent-signup.html',
+            agent_api_doc: 'https://github.com/haocn-ops/X4A'
+          )
+        expect(response.parsed_body['title']).to be_present
       end
     end
 
@@ -32,7 +36,11 @@ RSpec.describe 'Instances' do
 
         expect(response.parsed_body)
           .to be_present
-          .and include(title: 'Mastodon')
+          .and include(
+            agent_registration_url: '/agent-signup.html',
+            agent_api_doc: 'https://github.com/haocn-ops/X4A'
+          )
+        expect(response.parsed_body['title']).to be_present
       end
     end
   end
